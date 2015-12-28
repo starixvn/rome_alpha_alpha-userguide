@@ -1,0 +1,8 @@
+/.vs/config/applicationhost.config
+/packages/*
+/PrecompiledWeb
+*.suo
+/Alpha.UserGuide/bin
+/Alpha.UserGuide/obj
+/Alpha.UserGuide/StyleCop.Cache
+/Alpha.UserGuide/Settings.StyleCop

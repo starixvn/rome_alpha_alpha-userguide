@@ -1,0 +1,1639 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE9D9723-95BC-418C-8A29-B0472F378AFB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Alpha.UserGuide</RootNamespace>
+    <AssemblyName>Alpha.UserGuide</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.3.1.7705, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.3.1.7705\lib\net20\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DNAide, Version=2.1.4477.18436, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DNAide.2.1.4477.18436\lib\net40\DNAide.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Enyim.Caching, Version=2.12.0.0, Culture=neutral, PublicKeyToken=05e9c6b5a9ec94c2, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Security.SpamFilter.1.0.1.7\lib\net40\Enyim.Caching.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Fanex.Age.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.Age.UI.1.0.0.0\lib\net40\Fanex.Age.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=3.1.0.0, Culture=neutral">
+      <HintPath>..\packages\HandHistoryLibrary.1.0.0.43\lib\net40\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NetUtility, Version=1.0.4199.22106, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CasinoLibrary.1.0.2.2\lib\net40\NetUtility.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sunplus.Agent.Configurations, Version=1.0.4276.26261, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sunplus.Agent.Configurations.1.0.4276.26261\lib\net40\Sunplus.Agent.Configurations.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sunplus.Agent.Model, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sunplus.Agent.Model.1.0.0.1\lib\net40\Sunplus.Agent.Model.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sunplus.Agent.Utilities, Version=1.0.4853.28302, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sunplus.Agent.Utilities.1.0.4853.28302\lib\net40\Sunplus.Agent.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="TplCore, Version=1.0.4854.17253, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TplCore.1.0.4854.17254\lib\net40\TplCore.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agent\UserGuide_CS\Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agent\UserGuide_CS\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agent\UserGuide_CS\index.htm.cs" />
+    <Compile Include="Agent\UserGuide_CS\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agent\UserGuide_CS\Menu.htm.cs" />
+    <Compile Include="Agent\UserGuide_CT\Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agent\UserGuide_CT\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agent\UserGuide_CT\index.htm.cs" />
+    <Compile Include="Agent\UserGuide_CT\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agent\UserGuide_CT\Menu.htm.cs" />
+    <Compile Include="Agent\UserGuide_E\Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agent\UserGuide_E\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agent\UserGuide_E\index.htm.cs" />
+    <Compile Include="Agent\UserGuide_E\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agent\UserGuide_E\menu.htm.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.htm.cs" />
+    <Compile Include="Master\UserGuide_CS\Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\UserGuide_CS\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\UserGuide_CS\index.htm.cs" />
+    <Compile Include="Master\UserGuide_CS\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\UserGuide_CS\Menu.htm.cs" />
+    <Compile Include="Master\UserGuide_CT\Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\UserGuide_CT\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\UserGuide_CT\index.htm.cs" />
+    <Compile Include="Master\UserGuide_CT\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\UserGuide_CT\Menu.htm.cs" />
+    <Compile Include="Master\UserGuide_E\Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\UserGuide_E\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\UserGuide_E\index.htm.cs" />
+    <Compile Include="Master\UserGuide_E\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\UserGuide_E\Menu.htm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\LocalResourceUserGuide.Designer.cs">
+      <DependentUpon>LocalResourceUserGuide.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Agent\Resources\Menu.js" />
+    <Content Include="Agent\UserGuide_CS\balance\balance_section.html" />
+    <Content Include="Agent\UserGuide_CS\balance\images\Balance.jpg" />
+    <Content Include="Agent\UserGuide_CS\balance\images\h1.jpg" />
+    <Content Include="Agent\UserGuide_CS\Content.aspx" />
+    <Content Include="Agent\UserGuide_CS\contents.html" />
+    <Content Include="Agent\UserGuide_CS\convention\convention.html" />
+    <Content Include="Agent\UserGuide_CS\convention\images\conven.jpg" />
+    <Content Include="Agent\UserGuide_CS\convention\images\conven_CS.png" />
+    <Content Include="Agent\UserGuide_CS\convention\images\excel_icon.PNG" />
+    <Content Include="Agent\UserGuide_CS\convention\images\icon.jpg" />
+    <Content Include="Agent\UserGuide_CS\css\style.css" />
+    <Content Include="Agent\UserGuide_CS\css\uguide_A.css" />
+    <Content Include="Agent\UserGuide_CS\footer.html" />
+    <Content Include="Agent\UserGuide_CS\forecast\F1x2.html" />
+    <Content Include="Agent\UserGuide_CS\forecast\Handicap_Over_Under_Live.html" />
+    <Content Include="Agent\UserGuide_CS\forecast\images\h1.jpg" />
+    <Content Include="Agent\UserGuide_CS\forecast\images\h1_CS.jpg" />
+    <Content Include="Agent\UserGuide_CS\forecast\images\h2.jpg" />
+    <Content Include="Agent\UserGuide_CS\forecast\images\h2_CS.jpg" />
+    <Content Include="Agent\UserGuide_CS\glossary\images\conven.jpg" />
+    <Content Include="Agent\UserGuide_CS\glossary\images\conven_CS.png" />
+    <Content Include="Agent\UserGuide_CS\glossary\images\excel_icon.PNG" />
+    <Content Include="Agent\UserGuide_CS\glossary\images\icon.jpg" />
+    <Content Include="Agent\UserGuide_CS\HTMLPage.htm" />
+    <Content Include="Agent\UserGuide_CS\images\ball.jpg" />
+    <Content Include="Agent\UserGuide_CS\images\bg_header.jpg" />
+    <Content Include="Agent\UserGuide_CS\images\bg_left.jpg" />
+    <Content Include="Agent\UserGuide_CS\images\bg_left01.jpg" />
+    <Content Include="Agent\UserGuide_CS\images\bg_main.jpg" />
+    <Content Include="Agent\UserGuide_CS\images\bg_top.jpg" />
+    <Content Include="Agent\UserGuide_CS\images\ddaccordion.js" />
+    <Content Include="Agent\UserGuide_CS\images\icon_01.jpg" />
+    <Content Include="Agent\UserGuide_CS\images\icon_02.jpg" />
+    <Content Include="Agent\UserGuide_CS\images\icon_03.jpg" />
+    <Content Include="Agent\UserGuide_CS\images\icon_04.jpg" />
+    <Content Include="Agent\UserGuide_CS\images\jquery-1.2.6.pack.js" />
+    <Content Include="Agent\UserGuide_CS\images\left_top.jpg" />
+    <Content Include="Agent\UserGuide_CS\images\top_line.jpg" />
+    <Content Include="Agent\UserGuide_CS\images\top_line2.jpg" />
+    <Content Include="Agent\UserGuide_CS\images\top_line3.jpg" />
+    <Content Include="Agent\UserGuide_CS\Index.aspx" />
+    <Content Include="Agent\UserGuide_CS\index.htm" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\Casino_position_taking.html" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\credit_balance.html" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\customer_list.html" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\addnew-Casino.PNG" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\addnew-HR.PNG" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\AddNewCasino.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\AddNewHR.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\addnewSB_Fullmode.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\addnewSB_SimpleMode.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\addsub.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\BetSetting.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\casino PT.JPG" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\casino-PT.JPG" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\ChangePassword.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\commision.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\CommisionSetting.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\commission.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\CreditBalance.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\CSPositionTaking.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\customer-list.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\CustomerList.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\edit-casino.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\edit-HR.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\edit-HR.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\edit-multiple-casino.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\edit-multiple-HR.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\Edit-MultipleCS.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\EditMultipleHR.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\editSB_multiple.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\editSB_single.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\EditSingleCS.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\EditSingleHR.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h1.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h10.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h11.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h12.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h13.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h14.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h15.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h16.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h2.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h3.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h4.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h5.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h6.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h7.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h8.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\h9.jpg" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\MemberInformation.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\PTList.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\PTSetting.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\Statement.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\images\SubList.png" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\member_commission.html" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\new_member.html" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\position_taking.html" />
+    <Content Include="Agent\UserGuide_CS\memberinfo\sub_account.html" />
+    <Content Include="Agent\UserGuide_CS\Menu.aspx" />
+    <Content Include="Agent\UserGuide_CS\Menu.htm" />
+    <Content Include="Agent\UserGuide_CS\Report\AgentMatchWinLoss.html" />
+    <Content Include="Agent\UserGuide_CS\Report\AgentMatchWinLossDetail.html" />
+    <Content Include="Agent\UserGuide_CS\Report\AgentStatement.html" />
+    <Content Include="Agent\UserGuide_CS\Report\AgentWinLossByBettype.html" />
+    <Content Include="Agent\UserGuide_CS\Report\Convention.html" />
+    <Content Include="Agent\UserGuide_CS\Report\Horseracingcommission.html" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\AgMatchWL\BetList.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\AgMatchWL\MatchWinLoss.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\AgMatchWL\MatchWinLossDetail.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\AgMatchWL\MatchWL_Detail.png" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\AgWLByBt\WinlossByBettype.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\CancelledBets\MemberCancelledBets.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\CommByBt\MemCommByBt.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\CommByBt\MemCommByBt.PNG" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\date_select.PNG" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\excel_icon.PNG" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\HR_com\HR commission.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\MemOut\BetList.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\MemOut\BetList_Running.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\MemOut\DailyStatement.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\MemOut\member_oustanding.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\MemWL\BetList.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\MemWL\member_winloss.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\MemWL\member_winloss_2.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\RealtimeCWL\history.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\RealtimeCWL\realtime_WL.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\Result.PNG" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\Result\Badminton.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\Result\BasketBall.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\Result\Billard.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\Result\Football.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\Result\Golf.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\Result\Handball.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\Result\Hockey.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\Result\Soccer.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\Result\Tennis.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\Result\Valleyball.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\Images\Statement\Statement.jpg" />
+    <Content Include="Agent\UserGuide_CS\Report\MemberCancelledBets.html" />
+    <Content Include="Agent\UserGuide_CS\Report\MemberCommByBettype.html" />
+    <Content Include="Agent\UserGuide_CS\Report\MemberOutstanding.html" />
+    <Content Include="Agent\UserGuide_CS\Report\MemberWinLoss.html" />
+    <Content Include="Agent\UserGuide_CS\Report\Memberwinlossdetail.html" />
+    <Content Include="Agent\UserGuide_CS\Report\Realtimecasinowinloss.html" />
+    <Content Include="Agent\UserGuide_CS\Report\Result.html" />
+    <Content Include="Agent\UserGuide_CS\top.html" />
+    <Content Include="Agent\UserGuide_CS\totalBet\correct_score.html" />
+    <Content Include="Agent\UserGuide_CS\totalBet\FG_LG.html" />
+    <Content Include="Agent\UserGuide_CS\totalBet\handicap_over_under_live.html" />
+    <Content Include="Agent\UserGuide_CS\totalBet\horse_racing.html" />
+    <Content Include="Agent\UserGuide_CS\totalBet\HT_FT.html" />
+    <Content Include="Agent\UserGuide_CS\totalBet\images\h1.jpg" />
+    <Content Include="Agent\UserGuide_CS\totalBet\images\h10.jpg" />
+    <Content Include="Agent\UserGuide_CS\totalBet\images\h10_CS.jpg" />
+    <Content Include="Agent\UserGuide_CS\totalBet\images\h11.jpg" />
+    <Content Include="Agent\UserGuide_CS\totalBet\images\h12.jpg" />
+    <Content Include="Agent\UserGuide_CS\totalBet\images\h2.jpg" />
+    <Content Include="Agent\UserGuide_CS\totalBet\images\h3.jpg" />
+    <Content Include="Agent\UserGuide_CS\totalBet\images\h4.jpg" />
+    <Content Include="Agent\UserGuide_CS\totalBet\images\h5.jpg" />
+    <Content Include="Agent\UserGuide_CS\totalBet\images\h6.jpg" />
+    <Content Include="Agent\UserGuide_CS\totalBet\images\h7.jpg" />
+    <Content Include="Agent\UserGuide_CS\totalBet\images\h8.jpg" />
+    <Content Include="Agent\UserGuide_CS\totalBet\images\h9.jpg" />
+    <Content Include="Agent\UserGuide_CS\totalBet\images\totalbet-HR.jpg" />
+    <Content Include="Agent\UserGuide_CS\totalBet\images\totalbet-HR.PNG" />
+    <Content Include="Agent\UserGuide_CS\totalBet\mix_parlay.html" />
+    <Content Include="Agent\UserGuide_CS\totalBet\money_line.html" />
+    <Content Include="Agent\UserGuide_CS\totalBet\Odd_Even1x2.html" />
+    <Content Include="Agent\UserGuide_CS\totalBet\outright.html" />
+    <Content Include="Agent\UserGuide_CS\totalBet\totalbet-HR.PNG" />
+    <Content Include="Agent\UserGuide_CS\totalBet\total_goal.html" />
+    <Content Include="Agent\UserGuide_CS\transfer\images\h1.jpg" />
+    <Content Include="Agent\UserGuide_CS\transfer\images\Transfer.jpg" />
+    <Content Include="Agent\UserGuide_CS\transfer\images\Transfer.png" />
+    <Content Include="Agent\UserGuide_CS\transfer\images\Transfer_CS.jpg" />
+    <Content Include="Agent\UserGuide_CS\transfer\transfer_section.html" />
+    <Content Include="Agent\UserGuide_CS\Updated doc\Report\history.PNG" />
+    <Content Include="Agent\UserGuide_CS\Updated doc\Report\HR betlist.PNG" />
+    <Content Include="Agent\UserGuide_CS\Updated doc\Report\HR commission.PNG" />
+    <Content Include="Agent\UserGuide_CS\Updated doc\Report\realtime_WL.PNG" />
+    <Content Include="Agent\UserGuide_CS\viewlog\images\account-infor.jpg" />
+    <Content Include="Agent\UserGuide_CS\viewlog\images\credit.jpg" />
+    <Content Include="Agent\UserGuide_CS\viewlog\images\customer-setting.jpg" />
+    <Content Include="Agent\UserGuide_CS\viewlog\images\IPInfo.jpg" />
+    <Content Include="Agent\UserGuide_CS\viewlog\images\login.jpg" />
+    <Content Include="Agent\UserGuide_CS\viewlog\images\status.jpg" />
+    <Content Include="Agent\UserGuide_CS\viewlog\images\topmenu.jpg" />
+    <Content Include="Agent\UserGuide_CS\viewlog\view_log.html" />
+    <Content Include="Agent\UserGuide_CT\balance\balance_section.html" />
+    <Content Include="Agent\UserGuide_CT\balance\images\Balance.jpg" />
+    <Content Include="Agent\UserGuide_CT\balance\images\h1.jpg" />
+    <Content Include="Agent\UserGuide_CT\Content.aspx" />
+    <Content Include="Agent\UserGuide_CT\contents.html" />
+    <Content Include="Agent\UserGuide_CT\convention\convention.html" />
+    <Content Include="Agent\UserGuide_CT\convention\images\conven.jpg" />
+    <Content Include="Agent\UserGuide_CT\convention\images\excel_icon.PNG" />
+    <Content Include="Agent\UserGuide_CT\convention\images\icon.jpg" />
+    <Content Include="Agent\UserGuide_CT\css\style.css" />
+    <Content Include="Agent\UserGuide_CT\css\uguide_A.css" />
+    <Content Include="Agent\UserGuide_CT\footer.html" />
+    <Content Include="Agent\UserGuide_CT\forecast\F1x2.html" />
+    <Content Include="Agent\UserGuide_CT\forecast\Handicap_Over_Under_Live.html" />
+    <Content Include="Agent\UserGuide_CT\forecast\images\h1.jpg" />
+    <Content Include="Agent\UserGuide_CT\forecast\images\h1_CT.jpg" />
+    <Content Include="Agent\UserGuide_CT\forecast\images\h2.jpg" />
+    <Content Include="Agent\UserGuide_CT\forecast\images\h2_CT.jpg" />
+    <Content Include="Agent\UserGuide_CT\glossary\convention.html" />
+    <Content Include="Agent\UserGuide_CT\glossary\images\conven.jpg" />
+    <Content Include="Agent\UserGuide_CT\glossary\images\conven_CT.png" />
+    <Content Include="Agent\UserGuide_CT\glossary\images\excel_icon.PNG" />
+    <Content Include="Agent\UserGuide_CT\glossary\images\icon.jpg" />
+    <Content Include="Agent\UserGuide_CT\images\ball.jpg" />
+    <Content Include="Agent\UserGuide_CT\images\bg_header.jpg" />
+    <Content Include="Agent\UserGuide_CT\images\bg_left.jpg" />
+    <Content Include="Agent\UserGuide_CT\images\bg_left01.jpg" />
+    <Content Include="Agent\UserGuide_CT\images\bg_main.jpg" />
+    <Content Include="Agent\UserGuide_CT\images\bg_top.jpg" />
+    <Content Include="Agent\UserGuide_CT\images\ddaccordion.js" />
+    <Content Include="Agent\UserGuide_CT\images\icon_01.jpg" />
+    <Content Include="Agent\UserGuide_CT\images\icon_02.jpg" />
+    <Content Include="Agent\UserGuide_CT\images\icon_03.jpg" />
+    <Content Include="Agent\UserGuide_CT\images\icon_04.jpg" />
+    <Content Include="Agent\UserGuide_CT\images\jquery-1.2.6.pack.js" />
+    <Content Include="Agent\UserGuide_CT\images\left_top.jpg" />
+    <Content Include="Agent\UserGuide_CT\images\top_line.jpg" />
+    <Content Include="Agent\UserGuide_CT\images\top_line2.jpg" />
+    <Content Include="Agent\UserGuide_CT\images\top_line3.jpg" />
+    <Content Include="Agent\UserGuide_CT\Index.aspx" />
+    <Content Include="Agent\UserGuide_CT\index.htm" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\Casino_position_taking.html" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\credit_balance.html" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\customer_list.html" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\addnew-Casino.PNG" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\addnew-HR.PNG" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\AddNewHR.PNG" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\addnewSB_Fullmode.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\addnewSB_SimpleMode.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\addsub.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\BetSetting.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\casino PT.JPG" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\casino-PT.JPG" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\ChangePassword.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\commission.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\CommissionAddNew.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\CommSetting.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\CreditBalance.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\CSPositionTakingList.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\customer-list.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\CustomerList.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\edit-casino.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\edit-HR.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\edit-HR.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\edit-multiple-casino.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\edit-multiple-HR.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\EditCS.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\EditHR.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\editSB_multiple.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\editSB_single.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h1.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h10.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h11.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h12.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h13.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h14.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h15.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h16.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h2.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h3.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h4.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h5.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h6.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h7.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h8.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\h9.jpg" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\MemberInformation.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\MultipleEditCS.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\MultipleEditHR.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\PTList.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\PTSetting.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\Statement.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\images\SubList.png" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\member_commission.html" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\new_member.html" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\position_taking.html" />
+    <Content Include="Agent\UserGuide_CT\memberinfo\sub_account.html" />
+    <Content Include="Agent\UserGuide_CT\Menu.aspx" />
+    <Content Include="Agent\UserGuide_CT\Menu.htm" />
+    <Content Include="Agent\UserGuide_CT\Report\AgentMatchWinLoss.html" />
+    <Content Include="Agent\UserGuide_CT\Report\AgentMatchWinLossDetail.html" />
+    <Content Include="Agent\UserGuide_CT\Report\AgentStatement.html" />
+    <Content Include="Agent\UserGuide_CT\Report\AgentWinLossByBettype.html" />
+    <Content Include="Agent\UserGuide_CT\Report\Convention.html" />
+    <Content Include="Agent\UserGuide_CT\Report\Horseracingcommission.html" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\AgMatchWL\BetList.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\AgMatchWL\MatchWinLoss.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\AgMatchWL\MatchWinLossDetail.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\AgMatchWL\MatchWL_Detail.png" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\AgWLByBt\WinlossByBettype.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\CancelledBets\MemberCancelledBets.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\CommByBt\MemCommByBt.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\CommByBt\MemCommByBt.PNG" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\date_select.PNG" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\excel_icon.PNG" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\HR_com\HR commission.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\MemOut\BetList.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\MemOut\BetList_Running.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\MemOut\DailyStatement.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\MemOut\member_oustanding.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\MemWL\BetList.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\MemWL\member_winloss.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\MemWL\member_winloss_2.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\RealtimeCWL\history.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\RealtimeCWL\realtime_WL.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\Result.PNG" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\Result\Badminton.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\Result\BasketBall.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\Result\Billard.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\Result\Football.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\Result\Golf.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\Result\Handball.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\Result\Hockey.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\Result\Soccer.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\Result\Tennis.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\Result\Valleyball.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\Images\Statement\Statement.jpg" />
+    <Content Include="Agent\UserGuide_CT\Report\MemberCancelledBets.html" />
+    <Content Include="Agent\UserGuide_CT\Report\MemberCommByBettype.html" />
+    <Content Include="Agent\UserGuide_CT\Report\MemberOutstanding.html" />
+    <Content Include="Agent\UserGuide_CT\Report\MemberWinLoss.html" />
+    <Content Include="Agent\UserGuide_CT\Report\Memberwinlossdetail.html" />
+    <Content Include="Agent\UserGuide_CT\Report\Realtimecasinowinloss.html" />
+    <Content Include="Agent\UserGuide_CT\Report\Result.html" />
+    <Content Include="Agent\UserGuide_CT\top.html" />
+    <Content Include="Agent\UserGuide_CT\totalBet\correct_score.html" />
+    <Content Include="Agent\UserGuide_CT\totalBet\FG_LG.html" />
+    <Content Include="Agent\UserGuide_CT\totalBet\handicap_over_under_live.html" />
+    <Content Include="Agent\UserGuide_CT\totalBet\horse_racing.html" />
+    <Content Include="Agent\UserGuide_CT\totalBet\HT_FT.html" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\h1.jpg" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\h10.jpg" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\h10_CT.jpg" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\h11.jpg" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\h12.jpg" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\h2.jpg" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\h3.jpg" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\h4.jpg" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\h5.jpg" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\h6.jpg" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\h7.jpg" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\h8.jpg" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\h9.jpg" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\totalbet-HR.jpg" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\totalbet-HR.PNG" />
+    <Content Include="Agent\UserGuide_CT\totalBet\mix_parlay.html" />
+    <Content Include="Agent\UserGuide_CT\totalBet\money_line.html" />
+    <Content Include="Agent\UserGuide_CT\totalBet\Odd_Even1x2.html" />
+    <Content Include="Agent\UserGuide_CT\totalBet\outright.html" />
+    <Content Include="Agent\UserGuide_CT\totalBet\totalbet-HR.PNG" />
+    <Content Include="Agent\UserGuide_CT\totalBet\total_goal.html" />
+    <Content Include="Agent\UserGuide_CT\transfer\images\h1.jpg" />
+    <Content Include="Agent\UserGuide_CT\transfer\images\Transfer.jpg" />
+    <Content Include="Agent\UserGuide_CT\transfer\images\Transfer.png" />
+    <Content Include="Agent\UserGuide_CT\transfer\images\Transfer_CT.jpg" />
+    <Content Include="Agent\UserGuide_CT\transfer\transfer_section.html" />
+    <Content Include="Agent\UserGuide_CT\Updated doc\Report\history.PNG" />
+    <Content Include="Agent\UserGuide_CT\Updated doc\Report\HR betlist.PNG" />
+    <Content Include="Agent\UserGuide_CT\Updated doc\Report\HR commission.PNG" />
+    <Content Include="Agent\UserGuide_CT\Updated doc\Report\realtime_WL.PNG" />
+    <Content Include="Agent\UserGuide_CT\viewlog\images\account-infor.jpg" />
+    <Content Include="Agent\UserGuide_CT\viewlog\images\credit.jpg" />
+    <Content Include="Agent\UserGuide_CT\viewlog\images\customer-setting.jpg" />
+    <Content Include="Agent\UserGuide_CT\viewlog\images\IPInfo.jpg" />
+    <Content Include="Agent\UserGuide_CT\viewlog\images\login.jpg" />
+    <Content Include="Agent\UserGuide_CT\viewlog\images\status.jpg" />
+    <Content Include="Agent\UserGuide_CT\viewlog\images\topmenu.jpg" />
+    <Content Include="Agent\UserGuide_CT\viewlog\view_log.html" />
+    <Content Include="Agent\UserGuide_E\balance\balance_section.html" />
+    <Content Include="Agent\UserGuide_E\balance\images\Balance.jpg" />
+    <Content Include="Agent\UserGuide_E\balance\images\h1.jpg" />
+    <Content Include="Agent\UserGuide_E\Content.aspx" />
+    <Content Include="Agent\UserGuide_E\contents.html" />
+    <Content Include="Agent\UserGuide_E\convention\convention.html" />
+    <Content Include="Agent\UserGuide_E\convention\images\conven.jpg" />
+    <Content Include="Agent\UserGuide_E\convention\images\excel_icon.PNG" />
+    <Content Include="Agent\UserGuide_E\convention\images\icon.jpg" />
+    <Content Include="Agent\UserGuide_E\css\style.css" />
+    <Content Include="Agent\UserGuide_E\css\uguide_A.css" />
+    <Content Include="Agent\UserGuide_E\footer.html" />
+    <Content Include="Agent\UserGuide_E\forecast\F1x2.html" />
+    <Content Include="Agent\UserGuide_E\forecast\Handicap_Over_Under_Live.html" />
+    <Content Include="Agent\UserGuide_E\forecast\images\h1.jpg" />
+    <Content Include="Agent\UserGuide_E\forecast\images\h2.jpg" />
+    <Content Include="Agent\UserGuide_E\glossary\convention.html" />
+    <Content Include="Agent\UserGuide_E\glossary\images\conven.jpg" />
+    <Content Include="Agent\UserGuide_E\glossary\images\excel_icon.PNG" />
+    <Content Include="Agent\UserGuide_E\glossary\images\icon.jpg" />
+    <Content Include="Agent\UserGuide_E\images\ball.jpg" />
+    <Content Include="Agent\UserGuide_E\images\bg_header.jpg" />
+    <Content Include="Agent\UserGuide_E\images\bg_left.jpg" />
+    <Content Include="Agent\UserGuide_E\images\bg_left01.jpg" />
+    <Content Include="Agent\UserGuide_E\images\bg_main.jpg" />
+    <Content Include="Agent\UserGuide_E\images\bg_top.jpg" />
+    <Content Include="Agent\UserGuide_E\images\ddaccordion.js" />
+    <Content Include="Agent\UserGuide_E\images\icon_01.jpg" />
+    <Content Include="Agent\UserGuide_E\images\icon_02.jpg" />
+    <Content Include="Agent\UserGuide_E\images\icon_03.jpg" />
+    <Content Include="Agent\UserGuide_E\images\icon_04.jpg" />
+    <Content Include="Agent\UserGuide_E\images\jquery-1.2.6.pack.js" />
+    <Content Include="Agent\UserGuide_E\images\left_top.jpg" />
+    <Content Include="Agent\UserGuide_E\images\top_line.jpg" />
+    <Content Include="Agent\UserGuide_E\images\top_line2.jpg" />
+    <Content Include="Agent\UserGuide_E\images\top_line3.jpg" />
+    <Content Include="Agent\UserGuide_E\Index.aspx" />
+    <Content Include="Agent\UserGuide_E\index.htm" />
+    <Content Include="Agent\UserGuide_E\memberinfo\Casino_position_taking.html" />
+    <Content Include="Agent\UserGuide_E\memberinfo\credit_balance.html" />
+    <Content Include="Agent\UserGuide_E\memberinfo\customer_list.html" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\addnew-Casino.PNG" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\addnew-HR.PNG" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\addnewSB_Fullmode.png" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\addnewSB_SimpleMode.png" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\addsub.png" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\casino PT.JPG" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\casino-PT.JPG" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\commission.png" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\customer-list.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\edit-casino.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\edit-HR.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\edit-HR.png" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\edit-multiple-casino.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\edit-multiple-HR.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\editSB_multiple.png" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\editSB_single.png" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h1.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h10.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h11.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h12.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h13.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h14.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h15.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h16.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h2.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h3.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h4.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h5.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h6.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h7.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h8.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\images\h9.jpg" />
+    <Content Include="Agent\UserGuide_E\memberinfo\member_commission.html" />
+    <Content Include="Agent\UserGuide_E\memberinfo\new_member.html" />
+    <Content Include="Agent\UserGuide_E\memberinfo\position_taking.html" />
+    <Content Include="Agent\UserGuide_E\memberinfo\sub_account.html" />
+    <Content Include="Agent\UserGuide_E\Menu.aspx" />
+    <Content Include="Agent\UserGuide_E\Menu.htm" />
+    <Content Include="Agent\UserGuide_E\Report\AgentMatchWinLoss.html" />
+    <Content Include="Agent\UserGuide_E\Report\AgentMatchWinLossDetail.html" />
+    <Content Include="Agent\UserGuide_E\Report\AgentStatement.html" />
+    <Content Include="Agent\UserGuide_E\Report\AgentWinLossByBettype.html" />
+    <Content Include="Agent\UserGuide_E\Report\Convention.html" />
+    <Content Include="Agent\UserGuide_E\Report\Horseracingcommission.html" />
+    <Content Include="Agent\UserGuide_E\Report\Images\AgMatchWL\BetList.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\AgMatchWL\MatchWinLoss.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\AgMatchWL\MatchWinLossDetail.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\AgMatchWL\MatchWL_Detail.png" />
+    <Content Include="Agent\UserGuide_E\Report\Images\AgWLByBt\WinlossByBettype.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\AgWLByBt\WinlossByBettype_new.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\CancelledBets\MemberCancelledBets.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\CancelledBets\MemberCancelledBets_new.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\CommByBt\MemCommByBt.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\CommByBt\MemCommByBt.PNG" />
+    <Content Include="Agent\UserGuide_E\Report\Images\date_select.PNG" />
+    <Content Include="Agent\UserGuide_E\Report\Images\excel_icon.PNG" />
+    <Content Include="Agent\UserGuide_E\Report\Images\HR_com\HR commission.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\HR_com\HR commission_new.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\MemOut\BetList.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\MemOut\BetList_Running.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\MemOut\DailyStatement.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\MemOut\member_oustanding.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\MemOut\member_oustanding_new.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\MemWL\BetList.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\MemWL\member_winloss.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\MemWL\member_winloss_2.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\RealtimeCWL\history.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\RealtimeCWL\realtime_WL.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\Result.PNG" />
+    <Content Include="Agent\UserGuide_E\Report\Images\Result\Badminton.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\Result\BasketBall.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\Result\Billard.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\Result\Football.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\Result\Golf.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\Result\Handball.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\Result\Hockey.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\Result\Soccer.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\Result\Tennis.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\Result\Valleyball.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\Images\Statement\Statement.jpg" />
+    <Content Include="Agent\UserGuide_E\Report\MemberCancelledBets.html" />
+    <Content Include="Agent\UserGuide_E\Report\MemberCommByBettype.html" />
+    <Content Include="Agent\UserGuide_E\Report\MemberOutstanding.html" />
+    <Content Include="Agent\UserGuide_E\Report\MemberWinLoss.html" />
+    <Content Include="Agent\UserGuide_E\Report\Memberwinlossdetail.html" />
+    <Content Include="Agent\UserGuide_E\Report\Realtimecasinowinloss.html" />
+    <Content Include="Agent\UserGuide_E\Report\Result.html" />
+    <Content Include="Agent\UserGuide_E\top.html" />
+    <Content Include="Agent\UserGuide_E\totalBet\correct_score.html" />
+    <Content Include="Agent\UserGuide_E\totalBet\FG_LG.html" />
+    <Content Include="Agent\UserGuide_E\totalBet\handicap_over_under_live.html" />
+    <Content Include="Agent\UserGuide_E\totalBet\horse_racing.html" />
+    <Content Include="Agent\UserGuide_E\totalBet\HT_FT.html" />
+    <Content Include="Agent\UserGuide_E\totalBet\images\h1.jpg" />
+    <Content Include="Agent\UserGuide_E\totalBet\images\h10.jpg" />
+    <Content Include="Agent\UserGuide_E\totalBet\images\h10_new.jpg" />
+    <Content Include="Agent\UserGuide_E\totalBet\images\h11.jpg" />
+    <Content Include="Agent\UserGuide_E\totalBet\images\h12.jpg" />
+    <Content Include="Agent\UserGuide_E\totalBet\images\h2.jpg" />
+    <Content Include="Agent\UserGuide_E\totalBet\images\h3.jpg" />
+    <Content Include="Agent\UserGuide_E\totalBet\images\h4.jpg" />
+    <Content Include="Agent\UserGuide_E\totalBet\images\h5.jpg" />
+    <Content Include="Agent\UserGuide_E\totalBet\images\h6.jpg" />
+    <Content Include="Agent\UserGuide_E\totalBet\images\h7.jpg" />
+    <Content Include="Agent\UserGuide_E\totalBet\images\h8.jpg" />
+    <Content Include="Agent\UserGuide_E\totalBet\images\h9.jpg" />
+    <Content Include="Agent\UserGuide_E\totalBet\images\totalbet-HR.PNG" />
+    <Content Include="Agent\UserGuide_E\totalBet\mix_parlay.html" />
+    <Content Include="Agent\UserGuide_E\totalBet\money_line.html" />
+    <Content Include="Agent\UserGuide_E\totalBet\Odd_Even1x2.html" />
+    <Content Include="Agent\UserGuide_E\totalBet\outright.html" />
+    <Content Include="Agent\UserGuide_E\totalBet\totalbet-HR.PNG" />
+    <Content Include="Agent\UserGuide_E\totalBet\total_goal.html" />
+    <Content Include="Agent\UserGuide_E\transfer\images\h1.jpg" />
+    <Content Include="Agent\UserGuide_E\transfer\images\Transfer.png" />
+    <Content Include="Agent\UserGuide_E\transfer\transfer_section.html" />
+    <Content Include="Agent\UserGuide_E\Updated doc\Report\history.PNG" />
+    <Content Include="Agent\UserGuide_E\Updated doc\Report\HR betlist.PNG" />
+    <Content Include="Agent\UserGuide_E\Updated doc\Report\HR commission.PNG" />
+    <Content Include="Agent\UserGuide_E\Updated doc\Report\realtime_WL.PNG" />
+    <Content Include="Agent\UserGuide_E\viewlog\images\account-infor.jpg" />
+    <Content Include="Agent\UserGuide_E\viewlog\images\credit.jpg" />
+    <Content Include="Agent\UserGuide_E\viewlog\images\customer-setting.jpg" />
+    <Content Include="Agent\UserGuide_E\viewlog\images\IPInfo.jpg" />
+    <Content Include="Agent\UserGuide_E\viewlog\images\login.jpg" />
+    <Content Include="Agent\UserGuide_E\viewlog\images\status.jpg" />
+    <Content Include="Agent\UserGuide_E\viewlog\images\topmenu.jpg" />
+    <Content Include="Agent\UserGuide_E\viewlog\view_log.html" />
+    <Content Include="Global.asax" />
+    <Content Include="Index.aspx" />
+    <Content Include="Index.htm" />
+    <Content Include="Master\Resources\Menu.js" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\account_setting.html" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\balance_info.html" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\customer_info.html" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\BetSetting_Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\Commission_Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\EditCasino_Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\EditCasino_Member.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\EditFinance_Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\EditFinance_Member.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\EditHR_Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\EditHR_Member.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\EditInfo_Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\EditSportBook_Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\EditSportBook_Member.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\FIMinPT_Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\HRMinPT_Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\Login_Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\Login_Member.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\OnlineList_Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\OnlineList_Member.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\ResetPassword_Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\SBMinPT_Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\Setting_Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\Setting_Member.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\AccountSetting\Transfer_Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\BalanceInfo\AgentOutstanding.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\BalanceInfo\BalanceInfo.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\BalanceInfo\BalanceInfo2.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\BalanceInfo\BalanceInfo_Member.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\BalanceInfo\DownlineList.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\BalanceInfo\MemberOutstanding.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\BalanceInfo\TotalBalance.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\AgentList.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\BetList.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\CustomerInfo.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\CustomerInfo2.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\CustomerInfo3.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\CustomerInfo_Master.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\CustomerInfo_Master2.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\CustomerInfo_Member.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\CustomerInfo_Member2.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\CustomerInfo_Member3.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\CustomerList.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\Statement.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\Statement_Master.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\Statement_Member.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\ViewLog.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\ViewLog_Master.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\CustomerInfo\ViewLog_Member.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\images\Overview\AccInfo_Overview.jpg" />
+    <Content Include="Master\UserGuide_CS\AccountInfo\overview.html" />
+    <Content Include="Master\UserGuide_CS\balance\balance_section.html" />
+    <Content Include="Master\UserGuide_CS\balance\images\Balance.jpg" />
+    <Content Include="Master\UserGuide_CS\Content.aspx" />
+    <Content Include="Master\UserGuide_CS\contents.html" />
+    <Content Include="Master\UserGuide_CS\convention\convention.html" />
+    <Content Include="Master\UserGuide_CS\convention\images\conven.jpg" />
+    <Content Include="Master\UserGuide_CS\convention\images\excel_icon.PNG" />
+    <Content Include="Master\UserGuide_CS\convention\images\icon.jpg" />
+    <Content Include="Master\UserGuide_CS\css\style.css" />
+    <Content Include="Master\UserGuide_CS\css\uguide_A.css" />
+    <Content Include="Master\UserGuide_CS\footer.html" />
+    <Content Include="Master\UserGuide_CS\forecast\F1x2.html" />
+    <Content Include="Master\UserGuide_CS\forecast\Handicap_Over_Under_Live.html" />
+    <Content Include="Master\UserGuide_CS\forecast\images\1x2\1x2.jpg" />
+    <Content Include="Master\UserGuide_CS\forecast\images\1x2\BetList.jpg" />
+    <Content Include="Master\UserGuide_CS\forecast\images\Handicap-OverUnder-Live\BetList.jpg" />
+    <Content Include="Master\UserGuide_CS\forecast\images\Handicap-OverUnder-Live\handicap-overunder-live.jpg" />
+    <Content Include="Master\UserGuide_CS\forecast\images\Handicap-OverUnder-Live\Handicap_Detail.jpg" />
+    <Content Include="Master\UserGuide_CS\forecast\images\Handicap-OverUnder-Live\OverUnder_Detail.jpg" />
+    <Content Include="Master\UserGuide_CS\glossary\convention.html" />
+    <Content Include="Master\UserGuide_CS\glossary\images\convention.jpg" />
+    <Content Include="Master\UserGuide_CS\glossary\images\icon.jpg" />
+    <Content Include="Master\UserGuide_CS\images\ball.jpg" />
+    <Content Include="Master\UserGuide_CS\images\bg_header.jpg" />
+    <Content Include="Master\UserGuide_CS\images\bg_left.jpg" />
+    <Content Include="Master\UserGuide_CS\images\bg_left01.jpg" />
+    <Content Include="Master\UserGuide_CS\images\bg_main.jpg" />
+    <Content Include="Master\UserGuide_CS\images\bg_top.jpg" />
+    <Content Include="Master\UserGuide_CS\images\ddaccordion.js" />
+    <Content Include="Master\UserGuide_CS\images\icon_01.jpg" />
+    <Content Include="Master\UserGuide_CS\images\icon_02.jpg" />
+    <Content Include="Master\UserGuide_CS\images\icon_03.jpg" />
+    <Content Include="Master\UserGuide_CS\images\icon_04.jpg" />
+    <Content Include="Master\UserGuide_CS\images\jquery-1.2.6.pack.js" />
+    <Content Include="Master\UserGuide_CS\images\left_top.jpg" />
+    <Content Include="Master\UserGuide_CS\images\top_line.jpg" />
+    <Content Include="Master\UserGuide_CS\images\top_line2.jpg" />
+    <Content Include="Master\UserGuide_CS\images\top_line3.jpg" />
+    <Content Include="Master\UserGuide_CS\Index.aspx" />
+    <Content Include="Master\UserGuide_CS\index.htm" />
+    <Content Include="Master\UserGuide_CS\index.html" />
+    <Content Include="Master\UserGuide_CS\left_menu.html" />
+    <Content Include="Master\UserGuide_CS\memberinfo\agent_list.html" />
+    <Content Include="Master\UserGuide_CS\memberinfo\Casino_position_taking.html" />
+    <Content Include="Master\UserGuide_CS\memberinfo\credit_balance.html" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\AgentList.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\ChangePassword.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\CustomerList.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditCasino.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditFinance.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditFinanceMinPT.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditHorseRacing.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditHorseRacingMinPT.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditMemberCasino.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditMemberFinance.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditMemberHorseRacing.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditMemberPT.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditMinPT.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditMultipleCasinoPT.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditMultipleFinancePT.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditMultipleHorseRacingPT.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditMultipleMemberCasinoPT.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditMultipleMemberFinancePT.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditMultipleMemberHorseRacingPT.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditMultipleMemberPT.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditMultiplePT.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditPT.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\EditTransfer.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\MemberStatement.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\AgentList\Statement.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\CasinoPositionTaking\Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\CasinoPositionTaking\Member.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\CasinoPositionTaking\UpdateCasinoSetting.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\Credit-Balance\Agent-popupCredit.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\Credit-Balance\Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\Credit-Balance\Member-popupCredit.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\Credit-Balance\Member.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\MemberCommission\MemberCommission.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\NewAgent\AddNewAgent.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\NewAgent\AgentCommission.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\NewAgent\AgentInformation.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\NewAgent\BetSetting.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\NewAgent\CasinoSetting.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\NewAgent\FinanceSetting.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\NewAgent\HorseRacingSetting.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\NewAgent\PositionTaking.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\NewAgent\TransferCondition.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\PositionTaking\Agent.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\PositionTaking\EditPositionTaking.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\PositionTaking\Member.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\SubAccount\AddSubAccount.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\SubAccount\ChangePassword.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\SubAccount\EditSubAccount.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\images\SubAccount\ListSubAccount.jpg" />
+    <Content Include="Master\UserGuide_CS\memberinfo\member_commission.html" />
+    <Content Include="Master\UserGuide_CS\memberinfo\new_agent.html" />
+    <Content Include="Master\UserGuide_CS\memberinfo\position_taking.html" />
+    <Content Include="Master\UserGuide_CS\memberinfo\sub_account.html" />
+    <Content Include="Master\UserGuide_CS\Menu.aspx" />
+    <Content Include="Master\UserGuide_CS\Menu.htm" />
+    <Content Include="Master\UserGuide_CS\Report\AgentCommByBettype.html" />
+    <Content Include="Master\UserGuide_CS\Report\AgentMatchWinLoss.html" />
+    <Content Include="Master\UserGuide_CS\Report\AgentOutstanding.html" />
+    <Content Include="Master\UserGuide_CS\Report\AgentStatement.html" />
+    <Content Include="Master\UserGuide_CS\Report\AgentWinLoss.html" />
+    <Content Include="Master\UserGuide_CS\Report\AgentWinLossByBettype.html" />
+    <Content Include="Master\UserGuide_CS\Report\Agentwinlossdetail.html" />
+    <Content Include="Master\UserGuide_CS\Report\Convention.html" />
+    <Content Include="Master\UserGuide_CS\Report\Horseracingcommission.html" />
+    <Content Include="Master\UserGuide_CS\Report\images\AgentOut\AgentOutstanding.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\AgentOut\BetList.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\AgentOut\BetListRunning.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\AgentOut\BetSummary.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\AgentOut\DailyStatement.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\AgentOut\MemberOutstanding.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\AgentWLDetail\AgentWinLossDetail - Old View.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\AgentWLDetail\AgentWinLossDetail.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\AgentWL\AgentWL-1.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\AgentWL\AgentWL-2.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\AgentWL\BetList.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\AgentWL\History.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\AgentWL\MemberWL.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\CancelledBets\MemberCancelledBets.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\CommByBetType\CommissionByBetType.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\HRComm\HRCommAgent.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\HRComm\HRCommMember.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\HRComm\MemberBetList.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\MatchWLDetail\MatchWinLossDetail.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\MatchWLDetail\MemberBetList.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\RealTimeCasinoWL\AgentRealTimeCWL.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\RealTimeCasinoWL\CasinoHandHistory.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\RealTimeCasinoWL\MemberRealTimeCWL.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\RealTimeCasinoWL\ResultWithPicture.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\Results\Badminton.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\Results\BasketBall.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\Results\Billard.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\Results\Football.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\Results\Golf.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\Results\Handball.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\Results\Hockey.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\Results\Soccer.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\Results\Tennis.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\Results\Volleyball.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\Statement\Statement.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\images\WLByBetType\WinlossByBetType.jpg" />
+    <Content Include="Master\UserGuide_CS\Report\MatchWinLossDetail.html" />
+    <Content Include="Master\UserGuide_CS\Report\MemberCancelledBets.html" />
+    <Content Include="Master\UserGuide_CS\Report\Realtimecasinowinloss.html" />
+    <Content Include="Master\UserGuide_CS\Report\Result.html" />
+    <Content Include="Master\UserGuide_CS\top.html" />
+    <Content Include="Master\UserGuide_CS\totalBet\correct_score.html" />
+    <Content Include="Master\UserGuide_CS\totalBet\FG_LG.html" />
+    <Content Include="Master\UserGuide_CS\totalBet\handicap_over_under_live.html" />
+    <Content Include="Master\UserGuide_CS\totalBet\horse_racing.html" />
+    <Content Include="Master\UserGuide_CS\totalBet\HT_FT.html" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\CorrectScore\CorrectScore.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\FG-LG\BetList1.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\FG-LG\BetList2.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\FG-LG\FG-LG.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\Handicap-OverUnder-Live\BetList-1stHalfOverUnder.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\Handicap-OverUnder-Live\BetList-FullTimeHandicap.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\Handicap-OverUnder-Live\BetList-FullTimeOverUnder.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\Handicap-OverUnder-Live\Forecast-1stHalfOverUnder.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\Handicap-OverUnder-Live\Forecast-FullTimeHandicap.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\Handicap-OverUnder-Live\Forecast-FullTimeOverUnder.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\Handicap-OverUnder-Live\Handicap-OverUnder-Live.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\Handicap-OverUnder-Live\Handicap-OverUnder-Live2.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\HorseRacing\BetList1.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\HorseRacing\BetList2.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\HorseRacing\BetList3.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\HorseRacing\HorseRacing.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\HT-FT\BetList1.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\HT-FT\BetList2.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\HT-FT\HT-FT.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\MixParlay\MixParlay-Detail.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\MixParlay\MixParlay.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\MoneyLine\BetList1.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\MoneyLine\BetList2.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\MoneyLine\BetList3.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\MoneyLine\MoneyLine.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\OddEven-1x2\BetList-1stHalf1x2.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\OddEven-1x2\BetList-FullTime1x2.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\OddEven-1x2\BetList-FullTimeOddEven.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\OddEven-1x2\Forecast-1stHalf1x2.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\OddEven-1x2\Forecast-FullTime1x2.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\OddEven-1x2\OddEven-1x2_1.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\OddEven-1x2\OddEven-1x2_2.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\Outright\BetList1.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\Outright\BetList2.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\Outright\Outright.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\TotalGoal\BetList1.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\TotalGoal\BetList2.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\images\TotalGoal\TotalGoal.jpg" />
+    <Content Include="Master\UserGuide_CS\totalBet\mix_parlay.html" />
+    <Content Include="Master\UserGuide_CS\totalBet\money_line.html" />
+    <Content Include="Master\UserGuide_CS\totalBet\Odd_Even1x2.html" />
+    <Content Include="Master\UserGuide_CS\totalBet\outright.html" />
+    <Content Include="Master\UserGuide_CS\totalBet\total_goal.html" />
+    <Content Include="Master\UserGuide_CS\transfer\images\Transfer-Direct.jpg" />
+    <Content Include="Master\UserGuide_CS\transfer\images\Transfer.jpg" />
+    <Content Include="Master\UserGuide_CS\transfer\transfer_section.html" />
+    <Content Include="Master\UserGuide_CS\viewlog\images\account-infor.jpg" />
+    <Content Include="Master\UserGuide_CS\viewlog\images\credit.jpg" />
+    <Content Include="Master\UserGuide_CS\viewlog\images\customer-setting.jpg" />
+    <Content Include="Master\UserGuide_CS\viewlog\images\IPInfo.jpg" />
+    <Content Include="Master\UserGuide_CS\viewlog\images\login.jpg" />
+    <Content Include="Master\UserGuide_CS\viewlog\images\status.jpg" />
+    <Content Include="Master\UserGuide_CS\viewlog\images\topmenu.jpg" />
+    <Content Include="Master\UserGuide_CS\viewlog\view_log.html" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\account_setting.html" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\balance_info.html" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\customer_info.html" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\BetSetting_Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\Commission_Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\EditCasino_Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\EditCasino_Member.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\EditFinance_Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\EditFinance_Member.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\EditHR_Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\EditHR_Member.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\EditInfo_Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\EditSportBook_Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\EditSportBook_Member.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\FIMinPT_Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\HRMinPT_Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\Login_Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\Login_Member.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\OnlineList_Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\OnlineList_Member.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\ResetPassword_Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\SBMinPT_Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\Setting_Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\Setting_Member.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\AccountSetting\Transfer_Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\BalanceInfo\AgentOutstanding.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\BalanceInfo\BalanceInfo.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\BalanceInfo\BalanceInfo2.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\BalanceInfo\BalanceInfo_Member.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\BalanceInfo\DownlineList.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\BalanceInfo\MemberOutstanding.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\BalanceInfo\TotalBalance.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\AgentList.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\BetList.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\CustomerInfo.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\CustomerInfo2.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\CustomerInfo3.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\CustomerInfo_Master.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\CustomerInfo_Master2.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\CustomerInfo_Member.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\CustomerInfo_Member2.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\CustomerInfo_Member3.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\CustomerList.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\Statement.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\Statement_Master.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\Statement_Member.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\ViewLog.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\ViewLog_Master.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\CustomerInfo\ViewLog_Member.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\images\Overview\AccInfo_Overview.jpg" />
+    <Content Include="Master\UserGuide_CT\AccountInfo\overview.html" />
+    <Content Include="Master\UserGuide_CT\balance\balance_section.html" />
+    <Content Include="Master\UserGuide_CT\balance\images\Balance.jpg" />
+    <Content Include="Master\UserGuide_CT\Content.aspx" />
+    <Content Include="Master\UserGuide_CT\contents.html" />
+    <Content Include="Master\UserGuide_CT\css\style.css" />
+    <Content Include="Master\UserGuide_CT\css\uguide_A.css" />
+    <Content Include="Master\UserGuide_CT\footer.html" />
+    <Content Include="Master\UserGuide_CT\forecast\F1x2.html" />
+    <Content Include="Master\UserGuide_CT\forecast\Handicap_Over_Under_Live.html" />
+    <Content Include="Master\UserGuide_CT\forecast\images\1x2\1x2.jpg" />
+    <Content Include="Master\UserGuide_CT\forecast\images\1x2\BetList.jpg" />
+    <Content Include="Master\UserGuide_CT\forecast\images\Handicap-OverUnder-Live\BetList.jpg" />
+    <Content Include="Master\UserGuide_CT\forecast\images\Handicap-OverUnder-Live\handicap-overunder-live.jpg" />
+    <Content Include="Master\UserGuide_CT\forecast\images\Handicap-OverUnder-Live\Handicap_Detail.jpg" />
+    <Content Include="Master\UserGuide_CT\forecast\images\Handicap-OverUnder-Live\OverUnder_Detail.jpg" />
+    <Content Include="Master\UserGuide_CT\glossary\convention.html" />
+    <Content Include="Master\UserGuide_CT\glossary\images\convention.jpg" />
+    <Content Include="Master\UserGuide_CT\glossary\images\icon.jpg" />
+    <Content Include="Master\UserGuide_CT\images\ball.jpg" />
+    <Content Include="Master\UserGuide_CT\images\bg_header.jpg" />
+    <Content Include="Master\UserGuide_CT\images\bg_left.jpg" />
+    <Content Include="Master\UserGuide_CT\images\bg_left01.jpg" />
+    <Content Include="Master\UserGuide_CT\images\bg_main.jpg" />
+    <Content Include="Master\UserGuide_CT\images\bg_top.jpg" />
+    <Content Include="Master\UserGuide_CT\images\ddaccordion.js" />
+    <Content Include="Master\UserGuide_CT\images\icon_01.jpg" />
+    <Content Include="Master\UserGuide_CT\images\icon_02.jpg" />
+    <Content Include="Master\UserGuide_CT\images\icon_03.jpg" />
+    <Content Include="Master\UserGuide_CT\images\icon_04.jpg" />
+    <Content Include="Master\UserGuide_CT\images\jquery-1.2.6.pack.js" />
+    <Content Include="Master\UserGuide_CT\images\left_top.jpg" />
+    <Content Include="Master\UserGuide_CT\images\top_line.jpg" />
+    <Content Include="Master\UserGuide_CT\images\top_line2.jpg" />
+    <Content Include="Master\UserGuide_CT\images\top_line3.jpg" />
+    <Content Include="Master\UserGuide_CT\Index.aspx" />
+    <Content Include="Master\UserGuide_CT\index.htm" />
+    <Content Include="Master\UserGuide_CT\index.html" />
+    <Content Include="Master\UserGuide_CT\left_menu.html" />
+    <Content Include="Master\UserGuide_CT\memberinfo\agent_list.html" />
+    <Content Include="Master\UserGuide_CT\memberinfo\Casino_position_taking.html" />
+    <Content Include="Master\UserGuide_CT\memberinfo\credit_balance.html" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\AgentList.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\ChangePassword.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\CustomerList.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditCasino.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditFinance.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditFinanceMinPT.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditHorseRacing.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditHorseRacingMinPT.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditMemberCasino.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditMemberFinance.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditMemberHorseRacing.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditMemberPT.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditMinPT.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditMultipleCasinoPT.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditMultipleFinancePT.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditMultipleHorseRacingPT.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditMultipleMemberCasinoPT.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditMultipleMemberFinancePT.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditMultipleMemberHorseRacingPT.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditMultipleMemberPT.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditMultiplePT.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditPT.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\EditTransfer.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\MemberStatement.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\AgentList\Statement.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\CasinoPositionTaking\Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\CasinoPositionTaking\Member.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\CasinoPositionTaking\UpdateCasinoSetting.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\Credit-Balance\Agent-popupCredit.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\Credit-Balance\Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\Credit-Balance\Member-popupCredit.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\Credit-Balance\Member.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\MemberCommission\MemberCommission.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\NewAgent\AddNewAgent.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\NewAgent\AgentCommission.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\NewAgent\AgentInformation.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\NewAgent\BetSetting.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\NewAgent\CasinoSetting.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\NewAgent\FinanceSetting.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\NewAgent\HorseRacingSetting.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\NewAgent\PositionTaking.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\NewAgent\TransferCondition.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\PositionTaking\Agent.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\PositionTaking\EditPositionTaking.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\PositionTaking\Member.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\SubAccount\AddSubAccount.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\SubAccount\ChangePassword.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\SubAccount\EditSubAccount.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\images\SubAccount\ListSubAccount.jpg" />
+    <Content Include="Master\UserGuide_CT\memberinfo\member_commission.html" />
+    <Content Include="Master\UserGuide_CT\memberinfo\new_agent.html" />
+    <Content Include="Master\UserGuide_CT\memberinfo\position_taking.html" />
+    <Content Include="Master\UserGuide_CT\memberinfo\sub_account.html" />
+    <Content Include="Master\UserGuide_CT\Menu.aspx" />
+    <Content Include="Master\UserGuide_CT\Menu.htm" />
+    <Content Include="Master\UserGuide_CT\Report\AgentCommByBettype.html" />
+    <Content Include="Master\UserGuide_CT\Report\AgentMatchWinLoss.html" />
+    <Content Include="Master\UserGuide_CT\Report\AgentOutstanding.html" />
+    <Content Include="Master\UserGuide_CT\Report\AgentStatement.html" />
+    <Content Include="Master\UserGuide_CT\Report\AgentWinLoss.html" />
+    <Content Include="Master\UserGuide_CT\Report\AgentWinLossByBettype.html" />
+    <Content Include="Master\UserGuide_CT\Report\Agentwinlossdetail.html" />
+    <Content Include="Master\UserGuide_CT\Report\Convention.html" />
+    <Content Include="Master\UserGuide_CT\Report\Horseracingcommission.html" />
+    <Content Include="Master\UserGuide_CT\Report\images\AgentOut\AgentOutstanding.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\AgentOut\BetList.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\AgentOut\BetListRunning.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\AgentOut\BetSummary.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\AgentOut\DailyStatement.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\AgentOut\MemberOutstanding.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\AgentWLDetail\AgentWinLossDetail - Old View.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\AgentWLDetail\AgentWinLossDetail.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\AgentWL\AgentWL-1.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\AgentWL\AgentWL-2.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\AgentWL\BetList.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\AgentWL\History.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\AgentWL\MemberWL.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\CancelledBets\MemberCancelledBets.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\CommByBetType\CommissionByBetType.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\HRComm\HRCommAgent.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\HRComm\HRCommMember.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\HRComm\MemberBetList.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\MatchWLDetail\MatchWinLossDetail.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\MatchWLDetail\MemberBetList.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\RealTimeCasinoWL\AgentRealTimeCWL.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\RealTimeCasinoWL\CasinoHandHistory.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\RealTimeCasinoWL\MemberRealTimeCWL.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\RealTimeCasinoWL\ResultWithPicture.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\Results\Badminton.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\Results\BasketBall.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\Results\Billard.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\Results\Football.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\Results\Golf.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\Results\Handball.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\Results\Hockey.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\Results\Soccer.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\Results\Tennis.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\Results\Volleyball.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\Statement\Statement.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\images\WLByBetType\WinlossByBetType.jpg" />
+    <Content Include="Master\UserGuide_CT\Report\MatchWinLossDetail.html" />
+    <Content Include="Master\UserGuide_CT\Report\MemberCancelledBets.html" />
+    <Content Include="Master\UserGuide_CT\Report\Realtimecasinowinloss.html" />
+    <Content Include="Master\UserGuide_CT\Report\Result.html" />
+    <Content Include="Master\UserGuide_CT\top.html" />
+    <Content Include="Master\UserGuide_CT\totalBet\correct_score.html" />
+    <Content Include="Master\UserGuide_CT\totalBet\FG_LG.html" />
+    <Content Include="Master\UserGuide_CT\totalBet\handicap_over_under_live.html" />
+    <Content Include="Master\UserGuide_CT\totalBet\horse_racing.html" />
+    <Content Include="Master\UserGuide_CT\totalBet\HT_FT.html" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\CorrectScore\CorrectScore.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\FG-LG\BetList1.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\FG-LG\BetList2.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\FG-LG\FG-LG.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\Handicap-OverUnder-Live\BetList-1stHalfOverUnder.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\Handicap-OverUnder-Live\BetList-FullTimeHandicap.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\Handicap-OverUnder-Live\BetList-FullTimeOverUnder.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\Handicap-OverUnder-Live\Forecast-1stHalfOverUnder.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\Handicap-OverUnder-Live\Forecast-FullTimeHandicap.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\Handicap-OverUnder-Live\Forecast-FullTimeOverUnder.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\Handicap-OverUnder-Live\Handicap-OverUnder-Live.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\Handicap-OverUnder-Live\Handicap-OverUnder-Live2.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\HorseRacing\BetList1.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\HorseRacing\BetList2.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\HorseRacing\BetList3.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\HorseRacing\HorseRacing.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\HT-FT\BetList1.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\HT-FT\BetList2.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\HT-FT\HT-FT.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\MixParlay\MixParlay-Detail.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\MixParlay\MixParlay.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\MoneyLine\BetList1.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\MoneyLine\BetList2.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\MoneyLine\BetList3.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\MoneyLine\MoneyLine.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\OddEven-1x2\BetList-1stHalf1x2.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\OddEven-1x2\BetList-FullTime1x2.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\OddEven-1x2\BetList-FullTimeOddEven.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\OddEven-1x2\Forecast-1stHalf1x2.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\OddEven-1x2\Forecast-FullTime1x2.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\OddEven-1x2\OddEven-1x2_1.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\OddEven-1x2\OddEven-1x2_2.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\Outright\BetList1.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\Outright\BetList2.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\Outright\Outright.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\TotalGoal\BetList1.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\TotalGoal\BetList2.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\images\TotalGoal\TotalGoal.jpg" />
+    <Content Include="Master\UserGuide_CT\totalBet\mix_parlay.html" />
+    <Content Include="Master\UserGuide_CT\totalBet\money_line.html" />
+    <Content Include="Master\UserGuide_CT\totalBet\Odd_Even1x2.html" />
+    <Content Include="Master\UserGuide_CT\totalBet\outright.html" />
+    <Content Include="Master\UserGuide_CT\totalBet\total_goal.html" />
+    <Content Include="Master\UserGuide_CT\transfer\images\Transfer-Direct.jpg" />
+    <Content Include="Master\UserGuide_CT\transfer\images\Transfer.jpg" />
+    <Content Include="Master\UserGuide_CT\transfer\transfer_section.html" />
+    <Content Include="Master\UserGuide_CT\viewlog\images\account-infor.jpg" />
+    <Content Include="Master\UserGuide_CT\viewlog\images\credit.jpg" />
+    <Content Include="Master\UserGuide_CT\viewlog\images\customer-setting.jpg" />
+    <Content Include="Master\UserGuide_CT\viewlog\images\IPInfo.jpg" />
+    <Content Include="Master\UserGuide_CT\viewlog\images\login.jpg" />
+    <Content Include="Master\UserGuide_CT\viewlog\images\status.jpg" />
+    <Content Include="Master\UserGuide_CT\viewlog\images\topmenu.jpg" />
+    <Content Include="Master\UserGuide_CT\viewlog\view_log.html" />
+    <Content Include="Master\UserGuide_E\AccountInfo\account_setting.html" />
+    <Content Include="Master\UserGuide_E\AccountInfo\balance_info.html" />
+    <Content Include="Master\UserGuide_E\AccountInfo\customer_info.html" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\BetSetting_Agent.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\Commission_Agent.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\EditCasino_Agent.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\EditCasino_Member.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\EditFinance_Agent.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\EditFinance_Member.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\EditHR_Agent.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\EditHR_Member.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\EditInfo_Agent.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\EditSportBook_Agent.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\EditSportBook_Member.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\FIMinPT_Agent.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\HRMinPT_Agent.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\Login_Agent.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\Login_Member.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\OnlineList_Agent.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\OnlineList_Member.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\ResetPassword_Agent.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\SBMinPT_Agent.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\Setting_Agent.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\Setting_Member.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\AccountSetting\Transfer_Agent.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\BalanceInfo\AgentOutstanding.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\BalanceInfo\BalanceInfo.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\BalanceInfo\BalanceInfo2.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\BalanceInfo\BalanceInfo_Member.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\BalanceInfo\DownlineList.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\BalanceInfo\MemberOutstanding.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\BalanceInfo\TotalBalance.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\AgentList.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\BetList.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\CustomerInfo.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\CustomerInfo2.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\CustomerInfo3.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\CustomerInfo_Master.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\CustomerInfo_Master2.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\CustomerInfo_Member.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\CustomerInfo_Member2.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\CustomerInfo_Member3.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\CustomerList.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\Statement.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\Statement_Master.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\Statement_Member.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\ViewLog.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\ViewLog_Master.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\CustomerInfo\ViewLog_Member.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\images\Overview\AccInfo_Overview.jpg" />
+    <Content Include="Master\UserGuide_E\AccountInfo\overview.html" />
+    <Content Include="Master\UserGuide_E\balance\balance_section.html" />
+    <Content Include="Master\UserGuide_E\balance\images\Balance.jpg" />
+    <Content Include="Master\UserGuide_E\Content.aspx" />
+    <Content Include="Master\UserGuide_E\contents.html" />
+    <Content Include="Master\UserGuide_E\convention\convention.html" />
+    <Content Include="Master\UserGuide_E\convention\images\conven.jpg" />
+    <Content Include="Master\UserGuide_E\convention\images\excel_icon.PNG" />
+    <Content Include="Master\UserGuide_E\convention\images\icon.jpg" />
+    <Content Include="Master\UserGuide_E\css\style.css" />
+    <Content Include="Master\UserGuide_E\css\uguide_A.css" />
+    <Content Include="Master\UserGuide_E\footer.html" />
+    <Content Include="Master\UserGuide_E\forecast\F1x2.html" />
+    <Content Include="Master\UserGuide_E\forecast\Handicap_Over_Under_Live.html" />
+    <Content Include="Master\UserGuide_E\forecast\images\1x2\1x2.jpg" />
+    <Content Include="Master\UserGuide_E\forecast\images\1x2\BetList.jpg" />
+    <Content Include="Master\UserGuide_E\forecast\images\Handicap-OverUnder-Live\BetList.jpg" />
+    <Content Include="Master\UserGuide_E\forecast\images\Handicap-OverUnder-Live\handicap-overunder-live.jpg" />
+    <Content Include="Master\UserGuide_E\forecast\images\Handicap-OverUnder-Live\Handicap_Detail.jpg" />
+    <Content Include="Master\UserGuide_E\forecast\images\Handicap-OverUnder-Live\OverUnder_Detail.jpg" />
+    <Content Include="Master\UserGuide_E\glossary\convention.html" />
+    <Content Include="Master\UserGuide_E\glossary\images\convention.jpg" />
+    <Content Include="Master\UserGuide_E\glossary\images\icon.jpg" />
+    <Content Include="Master\UserGuide_E\images\ball.jpg" />
+    <Content Include="Master\UserGuide_E\images\bg_header.jpg" />
+    <Content Include="Master\UserGuide_E\images\bg_left.jpg" />
+    <Content Include="Master\UserGuide_E\images\bg_left01.jpg" />
+    <Content Include="Master\UserGuide_E\images\bg_main.jpg" />
+    <Content Include="Master\UserGuide_E\images\bg_top.jpg" />
+    <Content Include="Master\UserGuide_E\images\ddaccordion.js" />
+    <Content Include="Master\UserGuide_E\images\icon_01.jpg" />
+    <Content Include="Master\UserGuide_E\images\icon_02.jpg" />
+    <Content Include="Master\UserGuide_E\images\icon_03.jpg" />
+    <Content Include="Master\UserGuide_E\images\icon_04.jpg" />
+    <Content Include="Master\UserGuide_E\images\jquery-1.2.6.pack.js" />
+    <Content Include="Master\UserGuide_E\images\left_top.jpg" />
+    <Content Include="Master\UserGuide_E\images\top_line.jpg" />
+    <Content Include="Master\UserGuide_E\images\top_line2.jpg" />
+    <Content Include="Master\UserGuide_E\images\top_line3.jpg" />
+    <Content Include="Master\UserGuide_E\Index.aspx" />
+    <Content Include="Master\UserGuide_E\index.htm" />
+    <Content Include="Master\UserGuide_E\index.html" />
+    <Content Include="Master\UserGuide_E\left_menu.html" />
+    <Content Include="Master\UserGuide_E\memberinfo\agent_list.html" />
+    <Content Include="Master\UserGuide_E\memberinfo\Casino_position_taking.html" />
+    <Content Include="Master\UserGuide_E\memberinfo\credit_balance.html" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\addnew-Casino.PNG" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\addnew-HR.PNG" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\addnewSB_Fullmode.png" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\addnewSB_SimpleMode.png" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\addsub.png" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\AgentList.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\ChangePassword.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\CustomerList.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditCasino.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditFinance.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditFinanceMinPT.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditHorseRacing.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditHorseRacingMinPT.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditMemberCasino.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditMemberFinance.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditMemberHorseRacing.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditMemberPT.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditMinPT.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditMultipleCasinoPT.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditMultipleFinancePT.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditMultipleHorseRacingPT.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditMultipleMemberCasinoPT.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditMultipleMemberFinancePT.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditMultipleMemberHorseRacingPT.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditMultipleMemberPT.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditMultiplePT.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditPT.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\EditTransfer.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\MemberStatement.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\AgentList\Statement.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\casino PT.JPG" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\casino-PT.JPG" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\CasinoPositionTaking\Agent.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\CasinoPositionTaking\Member.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\CasinoPositionTaking\UpdateCasinoSetting.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\commission.png" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\Credit-Balance\Agent-popupCredit.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\Credit-Balance\Agent.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\Credit-Balance\Member-popupCredit.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\Credit-Balance\Member.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\customer-list.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\edit-casino.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\edit-HR.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\edit-HR.png" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\edit-multiple-casino.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\edit-multiple-HR.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\editSB_multiple.png" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\editSB_single.png" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h1.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h10.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h11.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h12.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h13.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h14.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h15.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h16.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h2.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h3.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h4.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h5.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h6.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h7.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h8.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\h9.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\MemberCommission\MemberCommission.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\NewAgent\AddNewAgent.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\NewAgent\AgentCommission.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\NewAgent\AgentInformation.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\NewAgent\BetSetting.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\NewAgent\CasinoSetting.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\NewAgent\FinanceSetting.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\NewAgent\HorseRacingSetting.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\NewAgent\PositionTaking.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\NewAgent\TransferCondition.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\PositionTaking\Agent.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\PositionTaking\EditPositionTaking.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\PositionTaking\Member.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\SubAccount\AddSubAccount.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\SubAccount\ChangePassword.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\SubAccount\EditSubAccount.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\images\SubAccount\ListSubAccount.jpg" />
+    <Content Include="Master\UserGuide_E\memberinfo\member_commission.html" />
+    <Content Include="Master\UserGuide_E\memberinfo\new_agent.html" />
+    <Content Include="Master\UserGuide_E\memberinfo\position_taking.html" />
+    <Content Include="Master\UserGuide_E\memberinfo\sub_account.html" />
+    <Content Include="Master\UserGuide_E\Menu.aspx" />
+    <Content Include="Master\UserGuide_E\Menu.htm" />
+    <Content Include="Master\UserGuide_E\Report\AgentCommByBettype.html" />
+    <Content Include="Master\UserGuide_E\Report\AgentMatchWinLoss.html" />
+    <Content Include="Master\UserGuide_E\Report\AgentOutstanding.html" />
+    <Content Include="Master\UserGuide_E\Report\AgentStatement.html" />
+    <Content Include="Master\UserGuide_E\Report\AgentWinLoss.html" />
+    <Content Include="Master\UserGuide_E\Report\AgentWinLossByBettype.html" />
+    <Content Include="Master\UserGuide_E\Report\Agentwinlossdetail.html" />
+    <Content Include="Master\UserGuide_E\Report\Convention.html" />
+    <Content Include="Master\UserGuide_E\Report\Horseracingcommission.html" />
+    <Content Include="Master\UserGuide_E\Report\Images\AgentOut\AgentOutstanding.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\AgentOut\BetList.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\AgentOut\BetListRunning.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\AgentOut\BetSummary.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\AgentOut\DailyStatement.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\AgentOut\MemberOutstanding.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\AgentWLDetail\AgentWinLossDetail - Old View.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\AgentWLDetail\AgentWinLossDetail.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\AgentWL\AgentWL-1.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\AgentWL\AgentWL-2.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\AgentWL\BetList.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\AgentWL\History.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\AgentWL\MemberWL.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\CancelledBets\MemberCancelledBets.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\CommByBetType\CommissionByBetType.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\HRComm\HRCommAgent.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\HRComm\HRCommMember.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\HRComm\MemberBetList.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\MatchWLDetail\MatchWinLossDetail.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\MatchWLDetail\MemberBetList.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\RealTimeCasinoWL\AgentRealTimeCWL.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\RealTimeCasinoWL\CasinoHandHistory.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\RealTimeCasinoWL\MemberRealTimeCWL.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\RealTimeCasinoWL\ResultWithPicture.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\Results\Badminton.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\Results\BasketBall.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\Results\Billard.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\Results\Football.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\Results\Golf.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\Results\Handball.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\Results\Hockey.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\Results\Soccer.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\Results\Tennis.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\Results\Volleyball.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\Statement\Statement.jpg" />
+    <Content Include="Master\UserGuide_E\Report\Images\WLByBetType\WinlossByBetType.jpg" />
+    <Content Include="Master\UserGuide_E\Report\MatchWinLossDetail.html" />
+    <Content Include="Master\UserGuide_E\Report\MemberCancelledBets.html" />
+    <Content Include="Master\UserGuide_E\Report\Realtimecasinowinloss.html" />
+    <Content Include="Master\UserGuide_E\Report\Result.html" />
+    <Content Include="Master\UserGuide_E\top.html" />
+    <Content Include="Master\UserGuide_E\totalBet\correct_score.html" />
+    <Content Include="Master\UserGuide_E\totalBet\FG_LG.html" />
+    <Content Include="Master\UserGuide_E\totalBet\handicap_over_under_live.html" />
+    <Content Include="Master\UserGuide_E\totalBet\horse_racing.html" />
+    <Content Include="Master\UserGuide_E\totalBet\HT_FT.html" />
+    <Content Include="Master\UserGuide_E\totalBet\images\CorrectScore\CorrectScore.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\FG-LG\BetList1.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\FG-LG\BetList2.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\FG-LG\FG-LG.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\h1.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\h10.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\h11.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\h12.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\h2.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\h3.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\h4.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\h5.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\h6.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\h7.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\h8.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\h9.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\Handicap-OverUnder-Live\BetList-1stHalfOverUnder.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\Handicap-OverUnder-Live\BetList-FullTimeHandicap.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\Handicap-OverUnder-Live\BetList-FullTimeOverUnder.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\Handicap-OverUnder-Live\Forecast-1stHalfOverUnder.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\Handicap-OverUnder-Live\Forecast-FullTimeHandicap.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\Handicap-OverUnder-Live\Forecast-FullTimeOverUnder.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\Handicap-OverUnder-Live\Handicap-OverUnder-Live.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\Handicap-OverUnder-Live\Handicap-OverUnder-Live2.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\HorseRacing\BetList1.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\HorseRacing\BetList2.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\HorseRacing\BetList3.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\HorseRacing\HorseRacing.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\HT-FT\BetList1.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\HT-FT\BetList2.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\HT-FT\HT-FT.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\MixParlay\MixParlay-Detail.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\MixParlay\MixParlay.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\MoneyLine\BetList1.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\MoneyLine\BetList2.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\MoneyLine\BetList3.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\MoneyLine\MoneyLine.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\OddEven-1x2\BetList-1stHalf1x2.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\OddEven-1x2\BetList-FullTime1x2.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\OddEven-1x2\BetList-FullTimeOddEven.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\OddEven-1x2\Forecast-1stHalf1x2.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\OddEven-1x2\Forecast-FullTime1x2.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\OddEven-1x2\OddEven-1x2_1.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\OddEven-1x2\OddEven-1x2_2.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\Outright\BetList1.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\Outright\BetList2.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\Outright\Outright.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\totalbet-HR.PNG" />
+    <Content Include="Master\UserGuide_E\totalBet\images\TotalGoal\BetList1.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\TotalGoal\BetList2.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\images\TotalGoal\TotalGoal.jpg" />
+    <Content Include="Master\UserGuide_E\totalBet\mix_parlay.html" />
+    <Content Include="Master\UserGuide_E\totalBet\money_line.html" />
+    <Content Include="Master\UserGuide_E\totalBet\Odd_Even1x2.html" />
+    <Content Include="Master\UserGuide_E\totalBet\outright.html" />
+    <Content Include="Master\UserGuide_E\totalBet\totalbet-HR.PNG" />
+    <Content Include="Master\UserGuide_E\totalBet\total_goal.html" />
+    <Content Include="Master\UserGuide_E\transfer\images\Transfer-Direct.jpg" />
+    <Content Include="Master\UserGuide_E\transfer\images\Transfer.jpg" />
+    <Content Include="Master\UserGuide_E\transfer\transfer_section.html" />
+    <Content Include="Master\UserGuide_E\Updated doc\Report\history.PNG" />
+    <Content Include="Master\UserGuide_E\Updated doc\Report\HR betlist.PNG" />
+    <Content Include="Master\UserGuide_E\Updated doc\Report\HR commission.PNG" />
+    <Content Include="Master\UserGuide_E\Updated doc\Report\realtime_WL.PNG" />
+    <Content Include="Master\UserGuide_E\viewlog\images\account-infor.jpg" />
+    <Content Include="Master\UserGuide_E\viewlog\images\credit.jpg" />
+    <Content Include="Master\UserGuide_E\viewlog\images\customer-setting.jpg" />
+    <Content Include="Master\UserGuide_E\viewlog\images\IPInfo.jpg" />
+    <Content Include="Master\UserGuide_E\viewlog\images\login.jpg" />
+    <Content Include="Master\UserGuide_E\viewlog\images\status.jpg" />
+    <Content Include="Master\UserGuide_E\viewlog\images\topmenu.jpg" />
+    <Content Include="Master\UserGuide_E\viewlog\view_log.html" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LocalResourceUserGuide.ja-JP.resx" />
+    <EmbeddedResource Include="Resources\LocalResourceUserGuide.ko-KR.resx" />
+    <EmbeddedResource Include="Resources\LocalResourceUserGuide.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalResourceUserGuide.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LocalResourceUserGuide.th-TH.resx" />
+    <EmbeddedResource Include="Resources\LocalResourceUserGuide.vi-VN.resx" />
+    <EmbeddedResource Include="Resources\LocalResourceUserGuide.zh-CN.resx" />
+    <EmbeddedResource Include="Resources\LocalResourceUserGuide.zh-TW.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Agent\UserGuide_CS\totalBet\images\h3.psd" />
+    <Content Include="Agent\UserGuide_CT\totalBet\images\h3.psd" />
+    <Content Include="Agent\UserGuide_E\totalBet\images\h3.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\UserGuide_E\totalBet\images\h3.psd" />
+    <Content Include="Master\UserGuide_E\Web.config.exclude" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51015</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49036/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

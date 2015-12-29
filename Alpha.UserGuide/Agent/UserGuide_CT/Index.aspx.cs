@@ -17,8 +17,8 @@ namespace Alpha.UserGuide.Agent.UserGuide_CT
         }
 
         public override void RenderContent(System.Web.UI.HtmlTextWriter writer)
-        {
-            if (CurrentUserSession.IsAgent)
+        {            
+            if (Sunplus.Agent.Model.Entities.UserSession.Current.IsAgent)
             {
                 index_Template tpl = new index_Template();
                 writer.Write(tpl);

@@ -23,28 +23,33 @@ namespace Alpha.UserGuide
             Index_Template tpl = new Index_Template();
             tpl.UserGuide = Resources.LocalResourceUserGuide.UserGuide;
 
-            if (CurrentUserSession.IsAgent && !Sunplus.Agent.Model.Entities.Permission.UserPermission.IsNeutral)
+            if(!Sunplus.Agent.Model.Entities.Permission.UserPermission.IsNeutral)
             {
-                if (UserSession.Current.LangKey == "CS" || UserSession.Current.LangKey == "CT")
+                if (UserSession.Current.IsAgent)
                 {
-                    tpl.urlLink = "Agent/UserGuide_" + UserSession.Current.LangKey + "/" + "index.aspx";
+                    if (UserSession.Current.LangKey.Equals("CS", System.StringComparison.OrdinalIgnoreCase)
+                        || UserSession.Current.LangKey.Equals("CT", System.StringComparison.OrdinalIgnoreCase))
+                    {
+                        tpl.urlLink = string.Format("Agent/UserGuide_{0}/index.aspx", UserSession.Current.LangKey);
+                    }
+                    else
+                    {
+                        tpl.urlLink = "Agent/UserGuide_E/index.aspx";
+                    }
                 }
-                else
+                else if (UserSession.Current.IsMaster)
                 {
-                    tpl.urlLink = "Agent/UserGuide_E/index.aspx";
+                    if (UserSession.Current.LangKey.Equals("CS", System.StringComparison.OrdinalIgnoreCase)
+                        || UserSession.Current.LangKey.Equals("CT", System.StringComparison.OrdinalIgnoreCase))
+                    {
+                        tpl.urlLink = string.Format("Master/UserGuide_{0}/index.aspx", UserSession.Current.LangKey);
+                    }
+                    else
+                    {
+                        tpl.urlLink = "Master/UserGuide_E/index.aspx";
+                    }
                 }
-            }
-            else if (CurrentUserSession.IsMaster && !Sunplus.Agent.Model.Entities.Permission.UserPermission.IsNeutral)
-            {
-                if (UserSession.Current.LangKey == "CS" || UserSession.Current.LangKey == "CT")
-                {
-                    tpl.urlLink = "Master/UserGuide_" + UserSession.Current.LangKey + "/" + "index.aspx";
-                }
-                else
-                {
-                    tpl.urlLink = "Master/UserGuide_E/index.aspx";
-                }
-            }
+            }           
 
             writer.Write(tpl);
         }

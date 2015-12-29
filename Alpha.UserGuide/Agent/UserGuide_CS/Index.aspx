@@ -1,1 +1,1 @@
-<%@ Page Language="C#" AutoEventWireup="false" ValidateRequest="false" CodeFile="Index.aspx.cs" Inherits="Sunplus.Agent.UI._UserGuide.Agent.UserGuide_CS.Index_Page" %>
+<%@ Page Language="C#" AutoEventWireup="false" ValidateRequest="false" CodeFile="Index.aspx.cs" Inherits="Alpha.UserGuide.Agent.UserGuide_CS.Index_Page" %>

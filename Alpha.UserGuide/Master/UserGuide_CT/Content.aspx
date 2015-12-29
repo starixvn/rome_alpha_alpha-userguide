@@ -1,3 +1,3 @@
-<%@ Page Language="C#" AutoEventWireup="false" CodeFile="Content.aspx.cs" Inherits="Sunplus.Agent.UI._UserGuide.Master.UserGuide_CT.Content_Page" %>
+<%@ Page Language="C#" AutoEventWireup="false" CodeFile="Content.aspx.cs" Inherits="Alpha.UserGuide.Master.UserGuide_CT.Content_Page" %>
 
 

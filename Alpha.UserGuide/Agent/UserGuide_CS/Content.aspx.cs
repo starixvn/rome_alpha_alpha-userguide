@@ -1,6 +1,7 @@
 namespace Alpha.UserGuide.Agent.UserGuide_CS
 {
     using DNAide.Web;
+    using Sunplus.Agent.Model.Entities;
     using Sunplus.Agent.Utilities;
 
     public partial class Content_Page : Fanex.Age.UI.TplPage
@@ -20,13 +21,13 @@ namespace Alpha.UserGuide.Agent.UserGuide_CS
         }
 
         public override void RenderContent(System.Web.UI.HtmlTextWriter writer)
-        {
-            if (CurrentUserSession.IsAgent && !string.IsNullOrEmpty(Request["Url"]))
+        {            
+            if (UserSession.Current.IsAgent && !string.IsNullOrEmpty(Request["Url"]))
             {
                 string urlRequest = Request["Url"].Replace(' ', '+');
                 urlRequest = Encryption.CfsDeCrypt(urlRequest);
                 string[] arrUrlRequest = urlRequest.Split('/');
-                string html = TemplateHandler.LoadTemplate("../_UserGuide/Agent/UserGuide_CS/" + urlRequest, false);
+                string html = TemplateHandler.LoadTemplate("../Agent/UserGuide_CS/" + urlRequest, false);
                 html = html.Replace("href=\"../css/", "href=\"css/");
                 html = html.Replace("src=\"images/", "src=\"" + arrUrlRequest[0] + "/images/");
                 writer.Write(html);

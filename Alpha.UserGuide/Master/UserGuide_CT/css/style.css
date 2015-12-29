@@ -1,25 +1,5 @@
-@font-face {
-    font-family: Roboto;
-    src: url(../../../../App_Themes/Fonts/Roboto/Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Roboto Light";
-    src: url(../../../../App_Themes/Fonts/Roboto/Roboto-Light.ttf);
-}
-
-@font-face {
-    font-family: "Roboto Bold";
-    src: url(../../../../App_Themes/Fonts/Roboto/Roboto-Bold.ttf);
-}
-
-@font-face {
-    font-family: "Roboto Medium";
-    src: url(../../../../App_Themes/Fonts/Roboto/Roboto-Medium.ttf);
-}
-
 body{
-	font-family:"Roboto",Tahoma, Arial, Helvetica, sans-serif;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color:#444444;
 	background:#FBFBF7;

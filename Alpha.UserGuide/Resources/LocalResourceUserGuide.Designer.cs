@@ -22,7 +22,7 @@ namespace Alpha.UserGuide.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class LocalResourceUserGuide {
+    public class LocalResourceUserGuide {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Alpha.UserGuide.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Alpha.UserGuide.Resources.LocalResourceUserGuide", typeof(LocalResourceUserGuide).Assembly);
@@ -51,7 +51,7 @@ namespace Alpha.UserGuide.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Alpha.UserGuide.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Account Info Function.
         /// </summary>
-        internal static string AccInfoFunction {
+        public static string AccInfoFunction {
             get {
                 return ResourceManager.GetString("AccInfoFunction", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace Alpha.UserGuide.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Agent User Guide.
         /// </summary>
-        internal static string AgentUserGuide {
+        public static string AgentUserGuide {
             get {
                 return ResourceManager.GetString("AgentUserGuide", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace Alpha.UserGuide.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Agent Wap User Guide.
         /// </summary>
-        internal static string AgentWapUserGuide {
+        public static string AgentWapUserGuide {
             get {
                 return ResourceManager.GetString("AgentWapUserGuide", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace Alpha.UserGuide.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Auto Position Taking.
         /// </summary>
-        internal static string AutoPT {
+        public static string AutoPT {
             get {
                 return ResourceManager.GetString("AutoPT", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace Alpha.UserGuide.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Help.
         /// </summary>
-        internal static string Help {
+        public static string Help {
             get {
                 return ResourceManager.GetString("Help", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace Alpha.UserGuide.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Enable Casino for downlines.
         /// </summary>
-        internal static string HowToEnableCasino {
+        public static string HowToEnableCasino {
             get {
                 return ResourceManager.GetString("HowToEnableCasino", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace Alpha.UserGuide.Resources {
         /// <summary>
         ///   Looks up a localized string similar to How To Use.
         /// </summary>
-        internal static string HowToUsePro {
+        public static string HowToUsePro {
             get {
                 return ResourceManager.GetString("HowToUsePro", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace Alpha.UserGuide.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Master Auto Position Taking.
         /// </summary>
-        internal static string MasterAutoPT {
+        public static string MasterAutoPT {
             get {
                 return ResourceManager.GetString("MasterAutoPT", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace Alpha.UserGuide.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Configure Live Casino Win Limit.
         /// </summary>
-        internal static string MemberWinLimit {
+        public static string MemberWinLimit {
             get {
                 return ResourceManager.GetString("MemberWinLimit", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace Alpha.UserGuide.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Number Game.
         /// </summary>
-        internal static string NumberGame {
+        public static string NumberGame {
             get {
                 return ResourceManager.GetString("NumberGame", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace Alpha.UserGuide.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Products/features.
         /// </summary>
-        internal static string ProductsFeatures {
+        public static string ProductsFeatures {
             get {
                 return ResourceManager.GetString("ProductsFeatures", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace Alpha.UserGuide.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Security Code FAQS.
         /// </summary>
-        internal static string SecurityCode {
+        public static string SecurityCode {
             get {
                 return ResourceManager.GetString("SecurityCode", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace Alpha.UserGuide.Resources {
         /// <summary>
         ///   Looks up a localized string similar to User Guide.
         /// </summary>
-        internal static string UserGuide {
+        public static string UserGuide {
             get {
                 return ResourceManager.GetString("UserGuide", resourceCulture);
             }
@@ -180,7 +180,7 @@ namespace Alpha.UserGuide.Resources {
         /// <summary>
         ///   Looks up a localized string similar to View Log Function.
         /// </summary>
-        internal static string ViewLogFunction {
+        public static string ViewLogFunction {
             get {
                 return ResourceManager.GetString("ViewLogFunction", resourceCulture);
             }

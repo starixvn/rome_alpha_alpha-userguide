@@ -1,5 +1,7 @@
 namespace Alpha.UserGuide.Master.UserGuide_CS
 {
+    using Sunplus.Agent.Model.Entities;
+
     public partial class Index_Page : Fanex.Age.UI.TplPage
     {
         public override void ProcessRequest(ref System.Collections.Hashtable p)
@@ -18,7 +20,7 @@ namespace Alpha.UserGuide.Master.UserGuide_CS
 
         public override void RenderContent(System.Web.UI.HtmlTextWriter writer)
         {
-            if (CurrentUserSession.IsMaster)
+            if (UserSession.Current.IsMaster)
             {
                 index_Template tpl = new index_Template();
                 writer.Write(tpl);

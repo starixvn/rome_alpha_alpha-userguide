@@ -1,1 +1,1 @@
-<%@ Page Language="C#" EnableSessionState="ReadOnly" AutoEventWireup="false" ValidateRequest="false" CodeFile="Index.aspx.cs" Inherits="Alpha.UserGuide.Agent.UserGuide_E.Index_Page" %>
+<%@ Page Language="C#" EnableSessionState="ReadOnly" AutoEventWireup="false" ValidateRequest="false" Inherits="Alpha.UserGuide.Agent.UserGuide_E.Index_Page" Codebehind="Index.aspx.cs" %>

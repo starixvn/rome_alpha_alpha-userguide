@@ -1,3 +1,3 @@
-<%@ Page Language="C#" AutoEventWireup="false" CodeFile="Content.aspx.cs" Inherits="Alpha.UserGuide.Agent.UserGuide_CS.Content_Page" %>
+<%@ Page Language="C#" AutoEventWireup="false" Inherits="Alpha.UserGuide.Agent.UserGuide_CS.Content_Page" Codebehind="Content.aspx.cs" %>
 
 

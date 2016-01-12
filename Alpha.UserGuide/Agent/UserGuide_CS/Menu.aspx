@@ -1,2 +1,2 @@
-﻿<%@ Page Language="C#" EnableSessionState="ReadOnly" AutoEventWireup="false" CodeFile="Menu.aspx.cs" 
-    Inherits="Alpha.UserGuide.Agent.Index_Page" %>
+﻿<%@ Page Language="C#" EnableSessionState="ReadOnly" AutoEventWireup="false" 
+    Inherits="Alpha.UserGuide.Agent.Index_Page" Codebehind="Menu.aspx.cs" %>

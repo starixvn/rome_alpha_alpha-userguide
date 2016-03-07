@@ -1812,6 +1812,7 @@
     </Content>
     <Content Include="Web.uati1.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Web.local.config">
       <DependentUpon>Web.config</DependentUpon>

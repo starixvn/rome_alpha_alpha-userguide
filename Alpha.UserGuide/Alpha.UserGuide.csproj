@@ -1826,7 +1826,19 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-  </ItemGroup>
+    <Content Include="Web.backupMNLExNapInternal.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.backupMNLI1.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.backupMNLI7.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.backupMNLNapInternal.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+</ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\LocalResourceUserGuide.ja-JP.resx" />
     <EmbeddedResource Include="Resources\LocalResourceUserGuide.ko-KR.resx" />
@@ -1840,7 +1852,9 @@
     <EmbeddedResource Include="Resources\LocalResourceUserGuide.zh-TW.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Agent\UserGuide_CS\totalBet\images\h3.psd" />

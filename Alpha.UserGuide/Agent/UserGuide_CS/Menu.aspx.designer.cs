@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Alpha.UserGuide.Agent {
+namespace Alpha.UserGuide.Agent.UserGuide_CS {
     
     
-    public partial class Index_Page {
+    public partial class Menu_Page {
     }
 }

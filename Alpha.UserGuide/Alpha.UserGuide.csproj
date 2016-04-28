@@ -281,7 +281,6 @@
     <Compile Include="Agent\UserGuide_CS\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Agent\UserGuide_CS\Menu.htm.cs" />
     <Compile Include="Agent\UserGuide_CT\Content.aspx.cs">
       <DependentUpon>Content.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -436,6 +435,7 @@
     <Content Include="Agent\UserGuide_CS\forecast\images\h1_CS.jpg" />
     <Content Include="Agent\UserGuide_CS\forecast\images\h2.jpg" />
     <Content Include="Agent\UserGuide_CS\forecast\images\h2_CS.jpg" />
+    <Content Include="Agent\UserGuide_CS\glossary\convention.html" />
     <Content Include="Agent\UserGuide_CS\glossary\images\conven.jpg" />
     <Content Include="Agent\UserGuide_CS\glossary\images\conven_CS.png" />
     <Content Include="Agent\UserGuide_CS\glossary\images\excel_icon.PNG" />
@@ -1838,7 +1838,7 @@
     <Content Include="Web.backupMNLNapInternal.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-</ItemGroup>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\LocalResourceUserGuide.ja-JP.resx" />
     <EmbeddedResource Include="Resources\LocalResourceUserGuide.ko-KR.resx" />
@@ -1885,7 +1885,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51015</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

@@ -261,12 +261,14 @@
   <ItemGroup>
     <Compile Include="Agent\UserGuide_CS\Content.aspx.cs">
       <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_CS\Content.aspx.designer.cs">
       <DependentUpon>Content.aspx</DependentUpon>
     </Compile>
     <Compile Include="Agent\UserGuide_CS\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_CS\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -274,18 +276,21 @@
     <Compile Include="Agent\UserGuide_CS\index.htm.cs" />
     <Compile Include="Agent\UserGuide_CS\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_CS\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Agent\UserGuide_CT\Content.aspx.cs">
       <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_CT\Content.aspx.designer.cs">
       <DependentUpon>Content.aspx</DependentUpon>
     </Compile>
     <Compile Include="Agent\UserGuide_CT\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_CT\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -293,6 +298,7 @@
     <Compile Include="Agent\UserGuide_CT\index.htm.cs" />
     <Compile Include="Agent\UserGuide_CT\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_CT\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
@@ -300,12 +306,14 @@
     <Compile Include="Agent\UserGuide_CT\Menu.htm.cs" />
     <Compile Include="Agent\UserGuide_E\Content.aspx.cs">
       <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_E\Content.aspx.designer.cs">
       <DependentUpon>Content.aspx</DependentUpon>
     </Compile>
     <Compile Include="Agent\UserGuide_E\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_E\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -313,6 +321,7 @@
     <Compile Include="Agent\UserGuide_E\index.htm.cs" />
     <Compile Include="Agent\UserGuide_E\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_E\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
@@ -323,6 +332,7 @@
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -330,12 +340,14 @@
     <Compile Include="Index.htm.cs" />
     <Compile Include="Master\UserGuide_CS\Content.aspx.cs">
       <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_CS\Content.aspx.designer.cs">
       <DependentUpon>Content.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master\UserGuide_CS\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_CS\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -343,6 +355,7 @@
     <Compile Include="Master\UserGuide_CS\index.htm.cs" />
     <Compile Include="Master\UserGuide_CS\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_CS\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
@@ -350,12 +363,14 @@
     <Compile Include="Master\UserGuide_CS\Menu.htm.cs" />
     <Compile Include="Master\UserGuide_CT\Content.aspx.cs">
       <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_CT\Content.aspx.designer.cs">
       <DependentUpon>Content.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master\UserGuide_CT\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_CT\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -363,6 +378,7 @@
     <Compile Include="Master\UserGuide_CT\index.htm.cs" />
     <Compile Include="Master\UserGuide_CT\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_CT\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
@@ -370,12 +386,14 @@
     <Compile Include="Master\UserGuide_CT\Menu.htm.cs" />
     <Compile Include="Master\UserGuide_E\Content.aspx.cs">
       <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_E\Content.aspx.designer.cs">
       <DependentUpon>Content.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master\UserGuide_E\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_E\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -383,6 +401,7 @@
     <Compile Include="Master\UserGuide_E\index.htm.cs" />
     <Compile Include="Master\UserGuide_E\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_E\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
@@ -1778,47 +1797,25 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="Web.backupMNLExNapInternal.config" />
+    <Content Include="Web.backupMNLI1.config" />
+    <Content Include="Web.backupMNLI7.config" />
+    <Content Include="Web.backupMNLNapInternal.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <None Include="Properties\PublishProfiles\Local.pubxml" />
-    <Content Include="Web.napexternal.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.napinternal.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.uati7.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.uati1.config">
-      <DependentUpon>Web.config</DependentUpon>
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Web.local.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.proi1.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.proi7.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
+    <Content Include="Web.local.config" />
+    <Content Include="Web.napexternal.config" />
+    <Content Include="Web.napinternal.config" />
+    <Content Include="Web.proi1.config" />
+    <Content Include="Web.proi7.config" />
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Web.backupMNLExNapInternal.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.backupMNLI1.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.backupMNLI7.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.backupMNLNapInternal.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
+    <Content Include="Web.uati1.config" />
+    <Content Include="Web.uati7.config" />
+    <Content Include="Web.sit.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\LocalResourceUserGuide.ja-JP.resx" />

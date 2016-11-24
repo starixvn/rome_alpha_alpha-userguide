@@ -45,8 +45,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Alpha.Auth, Version=3.0.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Alpha.Auth.3.0.0.5\lib\net40\Alpha.Auth.dll</HintPath>
+    <Reference Include="Alpha.Web, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Alpha.Web.1.0.0.1\lib\net40\Alpha.Web.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Antlr3.Runtime, Version=3.3.1.7705, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -222,16 +222,16 @@
       <HintPath>..\packages\Sunplus.Agent.Configurations.3.0.0.1\lib\net40\Sunplus.Agent.Configurations.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sunplus.Agent.Model.Base, Version=3.0.1.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sunplus.Agent.Model.Base.3.0.1.3\lib\net40\Sunplus.Agent.Model.Base.dll</HintPath>
+    <Reference Include="Sunplus.Agent.Model.Base, Version=3.0.2.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sunplus.Agent.Model.Base.3.0.2.3\lib\net40\Sunplus.Agent.Model.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sunplus.Agent.Model.Definitions, Version=3.0.1.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sunplus.Agent.Model.Definitions.3.0.1.4-allbet2\lib\net40\Sunplus.Agent.Model.Definitions.dll</HintPath>
+      <HintPath>..\packages\Sunplus.Agent.Model.Definitions.3.0.1.5\lib\net40\Sunplus.Agent.Model.Definitions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sunplus.Agent.Utilities, Version=3.0.0.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sunplus.Agent.Utilities.3.0.0.3-DateTimeExt1\lib\net40\Sunplus.Agent.Utilities.dll</HintPath>
+    <Reference Include="Sunplus.Agent.Utilities, Version=3.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sunplus.Agent.Utilities.3.0.0.4\lib\net40\Sunplus.Agent.Utilities.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sunplus.Core.Common, Version=1.1.4505.19054, Culture=neutral, processorArchitecture=MSIL">
@@ -261,12 +261,14 @@
   <ItemGroup>
     <Compile Include="Agent\UserGuide_CS\Content.aspx.cs">
       <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_CS\Content.aspx.designer.cs">
       <DependentUpon>Content.aspx</DependentUpon>
     </Compile>
     <Compile Include="Agent\UserGuide_CS\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_CS\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -274,18 +276,21 @@
     <Compile Include="Agent\UserGuide_CS\index.htm.cs" />
     <Compile Include="Agent\UserGuide_CS\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_CS\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Agent\UserGuide_CT\Content.aspx.cs">
       <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_CT\Content.aspx.designer.cs">
       <DependentUpon>Content.aspx</DependentUpon>
     </Compile>
     <Compile Include="Agent\UserGuide_CT\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_CT\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -293,6 +298,7 @@
     <Compile Include="Agent\UserGuide_CT\index.htm.cs" />
     <Compile Include="Agent\UserGuide_CT\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_CT\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
@@ -300,12 +306,14 @@
     <Compile Include="Agent\UserGuide_CT\Menu.htm.cs" />
     <Compile Include="Agent\UserGuide_E\Content.aspx.cs">
       <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_E\Content.aspx.designer.cs">
       <DependentUpon>Content.aspx</DependentUpon>
     </Compile>
     <Compile Include="Agent\UserGuide_E\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_E\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -313,6 +321,7 @@
     <Compile Include="Agent\UserGuide_E\index.htm.cs" />
     <Compile Include="Agent\UserGuide_E\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agent\UserGuide_E\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
@@ -323,6 +332,7 @@
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -330,12 +340,14 @@
     <Compile Include="Index.htm.cs" />
     <Compile Include="Master\UserGuide_CS\Content.aspx.cs">
       <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_CS\Content.aspx.designer.cs">
       <DependentUpon>Content.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master\UserGuide_CS\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_CS\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -343,6 +355,7 @@
     <Compile Include="Master\UserGuide_CS\index.htm.cs" />
     <Compile Include="Master\UserGuide_CS\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_CS\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
@@ -350,12 +363,14 @@
     <Compile Include="Master\UserGuide_CS\Menu.htm.cs" />
     <Compile Include="Master\UserGuide_CT\Content.aspx.cs">
       <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_CT\Content.aspx.designer.cs">
       <DependentUpon>Content.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master\UserGuide_CT\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_CT\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -363,6 +378,7 @@
     <Compile Include="Master\UserGuide_CT\index.htm.cs" />
     <Compile Include="Master\UserGuide_CT\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_CT\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
@@ -370,12 +386,14 @@
     <Compile Include="Master\UserGuide_CT\Menu.htm.cs" />
     <Compile Include="Master\UserGuide_E\Content.aspx.cs">
       <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_E\Content.aspx.designer.cs">
       <DependentUpon>Content.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master\UserGuide_E\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_E\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -383,6 +401,7 @@
     <Compile Include="Master\UserGuide_E\index.htm.cs" />
     <Compile Include="Master\UserGuide_E\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\UserGuide_E\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>

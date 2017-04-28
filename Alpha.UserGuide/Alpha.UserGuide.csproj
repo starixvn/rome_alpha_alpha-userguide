@@ -1799,8 +1799,8 @@
     </Content>
     <Content Include="deployment.ignore" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
-    <Content Include="Web.backupMNLI1.config" />
-    <Content Include="Web.backupMNLI7.config" />
+    <Content Include="Web.backupMNL.config" />
+    <Content Include="Web.backupMNL2.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -1821,6 +1821,8 @@
     <Content Include="Web.napinternali7.config" />
     <Content Include="Web.backupMNLExNap.config" />
     <Content Include="Web.backupMNLNap.config" />
+    <Content Include="Web.backupMNLExNap2.config" />
+    <Content Include="Web.backupMNLNap2.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\LocalResourceUserGuide.ja-JP.resx" />

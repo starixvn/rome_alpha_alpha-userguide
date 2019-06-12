@@ -1,11 +1,11 @@
-namespace Alpha.UserGuide.Agent.UserGuide_CS
+﻿namespace Alpha.UserGuide.Agent.UserGuide_CS
 {
     using System.Web.UI;
-    using Master.UserGuide_CS;
+
     public partial class Menu_Page : Fanex.Age.UI.TplPage
-    {    
+    {
         public override void ProcessRequest(ref System.Collections.Hashtable p)
-        {            
+        {
         }
 
         public override object ValidateRequest(System.Collections.Hashtable p)

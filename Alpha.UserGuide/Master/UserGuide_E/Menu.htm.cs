@@ -45,57 +45,47 @@ namespace Alpha.UserGuide
 			protected static string s29{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("totalBet/HT_FT.html");}}
 			protected static string s30 = "\" target=\"mainFrame\" id=\"menuitem7\" class=\"left_menu\"onclick=\"menu_select(7);\">HT/FT</a></li><li><a href=\"Content.aspx?Url=";
 			protected static string s31{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("totalBet/FG_LG.html");}}
-			protected static string s32 = "\" target=\"mainFrame\" id=\"menuitem8\" class=\"left_menu\"onclick=\"menu_select(8);\">FG/LG</a></li><!--<li><a href=\"Content.aspx?Url=";
-			protected static string s33{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("totalBet/next_goal.html");}}
-			protected static string s34 = "\" target=\"mainFrame\" id=\"menuitem9\" class=\"left_menu\" onclick=\"menu_select(9);\">Next Goal</a></li>--><li><a href=\"Content.aspx?Url=";
-			protected static string s35{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("totalBet/horse_racing.html");}}
-			protected static string s36 = "\" target=\"mainFrame\" id=\"menuitem10\" class=\"left_menu\"onclick=\"menu_select(10);\">Horse Racing</a></li></ul><!--End Tolal Bet --><!--Begin_Forecast--><h3 class=\"menuheader expandable\">Forecast</h3><ul class=\"categoryitems\"><li><a href=\"Content.aspx?Url=";
-			protected static string s37{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("forecast/Handicap_Over_Under_Live.html");}}
-			protected static string s38 = "\" target=\"mainFrame\" id=\"menuitem11\"class=\"left_menu\" onclick=\"menu_select(11);\">Handicap/Over Under/Live</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s39{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("forecast/F1x2.html");}}
-			protected static string s40 = "\" target=\"mainFrame\" id=\"menuitem12\" class=\"left_menu\"onclick=\"menu_select(12);\">1 X 2</a></li><!--<li><a href=\"Content.aspx?Url=";
-			protected static string s41{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("forecast/horseracingfodds.html");}}
-			protected static string s42 = "\" target=\"mainFrame\" id=\"menuitem13\" class=\"left_menu\" onclick=\"menu_select(13);\">Horse Racing (FOdds)</a></li>--></ul><!--End_Forecast --><!--Begin_Reports --><h3 class=\"menuheader expandable\">reports</h3><ul class=\"categoryitems\"><li><a href=\"Content.aspx?Url=";
-			protected static string s43{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentWinLoss.html");}}
-			protected static string s44 = "\" target=\"mainFrame\" id=\"menuitem14\" class=\"left_menu\"onclick=\"menu_select(14);\">Agent Win Loss</a></li><!--<li><a href=\"Content.aspx?Url=";
-			protected static string s45{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/Agentwinlossdetail.html");}}
-			protected static string s46 = "\" target=\"mainFrame\" id=\"menuitem15\" class=\"left_menu\" onclick=\"menu_select(15);\">Agent Win Loss Detail</a></li>--><li><a href=\"Content.aspx?Url=";
-			protected static string s47{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentOutstanding.html");}}
-			protected static string s48 = "\" target=\"mainFrame\" id=\"menuitem16\" class=\"left_menu\"onclick=\"menu_select(16);\">Agent Outstanding</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s49{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/Realtimecasinowinloss.html");}}
-			protected static string s50 = "\" target=\"mainFrame\" id=\"menuitem17\"class=\"left_menu\" onclick=\"menu_select(17);\">Real Time Casino Win Loss</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s51{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentMatchWinLoss.html");}}
-			protected static string s52 = "\" target=\"mainFrame\" id=\"menuitem18\" class=\"left_menu\"onclick=\"menu_select(18);\">Match WinLoss</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s53{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/MatchWinLossDetail.html");}}
-			protected static string s54 = "\" target=\"mainFrame\" id=\"menuitem19\"class=\"left_menu\" onclick=\"menu_select(19);\">Match Win Loss Detail</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s55{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentWinLossByBettype.html");}}
-			protected static string s56 = "\" target=\"mainFrame\" id=\"menuitem20\"class=\"left_menu\" onclick=\"menu_select(20);\">Win Loss By Bet Type</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s57{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentCommByBettype.html");}}
-			protected static string s58 = "\" target=\"mainFrame\" id=\"menuitem21\"class=\"left_menu\" onclick=\"menu_select(21);\">Commission By Bet Type</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s59{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/Horseracingcommission.html");}}
-			protected static string s60 = "\" target=\"mainFrame\" id=\"menuitem22\"class=\"left_menu\" onclick=\"menu_select(22);\">Horse Racing Commission</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s61{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/MemberCancelledBets.html");}}
-			protected static string s62 = "\" target=\"mainFrame\" id=\"menuitem23\"class=\"left_menu\" onclick=\"menu_select(23);\">Cancelled Bets</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s63{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentStatement.html");}}
-			protected static string s64 = "\" target=\"mainFrame\" id=\"menuitem24\" class=\"left_menu\"onclick=\"menu_select(24);\">Statement</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s65{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/Result.html");}}
-			protected static string s66 = "\" target=\"mainFrame\" id=\"menuitem25\" class=\"left_menu\"onclick=\"menu_select(25);\">Results</a></li></ul><!--End_Reports --><!--Begin_Member Info --><h3 class=\"menuheader expandable\">member information</h3><ul class=\"categoryitems\"><li><a href=\"Content.aspx?Url=";
-			protected static string s67{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/new_Agent.html");}}
-			protected static string s68 = "\" target=\"mainFrame\" id=\"menuitem26\" class=\"left_menu\"onclick=\"menu_select(26);\">New Agent</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s69{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/sub_account.html");}}
-			protected static string s70 = "\" target=\"mainFrame\" id=\"menuitem27\" class=\"left_menu\"onclick=\"menu_select(27);\">Sub Account</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s71{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/agent_list.html");}}
-			protected static string s72 = "\" target=\"mainFrame\" id=\"menuitem28\" class=\"left_menu\"onclick=\"menu_select(28);\">Agent List</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s73{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/credit_balance.html");}}
-			protected static string s74 = "\" target=\"mainFrame\" id=\"menuitem29\" class=\"left_menu\"onclick=\"menu_select(29);\">Credit/Balance</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s75{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/position_taking.html");}}
-			protected static string s76 = "\" target=\"mainFrame\" id=\"menuitem30\"class=\"left_menu\" onclick=\"menu_select(30);\">Position Taking (%)</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s77{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/Casino_position_taking.html");}}
-			protected static string s78 = "\" target=\"mainFrame\" id=\"menuitem31\"class=\"left_menu\" onclick=\"menu_select(31);\">Casino Position Taking (%)</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s79{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/member_commission.html");}}
-			protected static string s80 = "\" target=\"mainFrame\" id=\"menuitem32\"class=\"left_menu\" onclick=\"menu_select(32);\">Member Commission</a></li></ul><!--End_Member Info --><!--Begin_Glossary --><h3 class=\"menuheader expandable\">Glossary</h3><ul class=\"categoryitems\"><li><a href=\"Content.aspx?Url=";
-			protected static string s81{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("glossary/convention.html");}}
-			protected static string s82 = "\" target=\"mainFrame\" id=\"menuitem33\" class=\"left_menu\"onclick=\"menu_select(33);\">Convention</a></li></ul><!--End_Glossary --></div><div id=\"img_left\"></div></body></html>";
+			protected static string s32 = "\" target=\"mainFrame\" id=\"menuitem8\" class=\"left_menu\"onclick=\"menu_select(8);\">FG/LG</a></li></ul><!--End Tolal Bet --><!--Begin_Forecast--><h3 class=\"menuheader expandable\">Forecast</h3><ul class=\"categoryitems\"><li><a href=\"Content.aspx?Url=";
+			protected static string s33{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("forecast/Handicap_Over_Under_Live.html");}}
+			protected static string s34 = "\" target=\"mainFrame\" id=\"menuitem11\"class=\"left_menu\" onclick=\"menu_select(11);\">Handicap/Over Under/Live</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s35{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("forecast/F1x2.html");}}
+			protected static string s36 = "\" target=\"mainFrame\" id=\"menuitem12\" class=\"left_menu\"onclick=\"menu_select(12);\">1 X 2</a></li></ul><!--End_Forecast --><!--Begin_Reports --><h3 class=\"menuheader expandable\">reports</h3><ul class=\"categoryitems\"><li><a href=\"Content.aspx?Url=";
+			protected static string s37{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentWinLoss.html");}}
+			protected static string s38 = "\" target=\"mainFrame\" id=\"menuitem14\" class=\"left_menu\"onclick=\"menu_select(14);\">Agent Win Loss</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s39{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentOutstanding.html");}}
+			protected static string s40 = "\" target=\"mainFrame\" id=\"menuitem16\" class=\"left_menu\"onclick=\"menu_select(16);\">Agent Outstanding</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s41{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/Realtimecasinowinloss.html");}}
+			protected static string s42 = "\" target=\"mainFrame\" id=\"menuitem17\"class=\"left_menu\" onclick=\"menu_select(17);\">Real Time Casino Win Loss</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s43{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentMatchWinLoss.html");}}
+			protected static string s44 = "\" target=\"mainFrame\" id=\"menuitem18\" class=\"left_menu\"onclick=\"menu_select(18);\">Match WinLoss</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s45{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/MatchWinLossDetail.html");}}
+			protected static string s46 = "\" target=\"mainFrame\" id=\"menuitem19\"class=\"left_menu\" onclick=\"menu_select(19);\">Match Win Loss Detail</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s47{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentWinLossByBettype.html");}}
+			protected static string s48 = "\" target=\"mainFrame\" id=\"menuitem20\"class=\"left_menu\" onclick=\"menu_select(20);\">Win Loss By Bet Type</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s49{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentCommByBettype.html");}}
+			protected static string s50 = "\" target=\"mainFrame\" id=\"menuitem21\"class=\"left_menu\" onclick=\"menu_select(21);\">Commission By Bet Type</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s51{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/MemberCancelledBets.html");}}
+			protected static string s52 = "\" target=\"mainFrame\" id=\"menuitem23\"class=\"left_menu\" onclick=\"menu_select(23);\">Cancelled Bets</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s53{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentStatement.html");}}
+			protected static string s54 = "\" target=\"mainFrame\" id=\"menuitem24\" class=\"left_menu\"onclick=\"menu_select(24);\">Statement</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s55{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/Result.html");}}
+			protected static string s56 = "\" target=\"mainFrame\" id=\"menuitem25\" class=\"left_menu\"onclick=\"menu_select(25);\">Results</a></li></ul><!--End_Reports --><!--Begin_Member Info --><h3 class=\"menuheader expandable\">member information</h3><ul class=\"categoryitems\"><li><a href=\"Content.aspx?Url=";
+			protected static string s57{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/new_Agent.html");}}
+			protected static string s58 = "\" target=\"mainFrame\" id=\"menuitem26\" class=\"left_menu\"onclick=\"menu_select(26);\">New Agent</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s59{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/sub_account.html");}}
+			protected static string s60 = "\" target=\"mainFrame\" id=\"menuitem27\" class=\"left_menu\"onclick=\"menu_select(27);\">Sub Account</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s61{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/agent_list.html");}}
+			protected static string s62 = "\" target=\"mainFrame\" id=\"menuitem28\" class=\"left_menu\"onclick=\"menu_select(28);\">Agent List</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s63{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/credit_balance.html");}}
+			protected static string s64 = "\" target=\"mainFrame\" id=\"menuitem29\" class=\"left_menu\"onclick=\"menu_select(29);\">Credit/Balance</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s65{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/position_taking.html");}}
+			protected static string s66 = "\" target=\"mainFrame\" id=\"menuitem30\"class=\"left_menu\" onclick=\"menu_select(30);\">Position Taking (%)</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s67{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/Casino_position_taking.html");}}
+			protected static string s68 = "\" target=\"mainFrame\" id=\"menuitem31\"class=\"left_menu\" onclick=\"menu_select(31);\">Casino Position Taking (%)</a></li><li><a href=\"Content.aspx?Url=";
+			protected static string s69{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/member_commission.html");}}
+			protected static string s70 = "\" target=\"mainFrame\" id=\"menuitem32\"class=\"left_menu\" onclick=\"menu_select(32);\">Member Commission</a></li></ul><!--End_Member Info --><!--Begin_Glossary --><h3 class=\"menuheader expandable\">Glossary</h3><ul class=\"categoryitems\"><li><a href=\"Content.aspx?Url=";
+			protected static string s71{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("glossary/convention.html");}}
+			protected static string s72 = "\" target=\"mainFrame\" id=\"menuitem33\" class=\"left_menu\"onclick=\"menu_select(33);\">Convention</a></li></ul><!--End_Glossary --></div><div id=\"img_left\"></div></body></html>";
 			public override void ToString(ref StringBuilder bd)
 			{
 				if(!Visible) return;
@@ -174,16 +164,6 @@ namespace Alpha.UserGuide
 					bd.Append(s70);
 					bd.Append(s71);
 					bd.Append(s72);
-					bd.Append(s73);
-					bd.Append(s74);
-					bd.Append(s75);
-					bd.Append(s76);
-					bd.Append(s77);
-					bd.Append(s78);
-					bd.Append(s79);
-					bd.Append(s80);
-					bd.Append(s81);
-					bd.Append(s82);
 				}
 				if(IsAssigned){bd.Append(Value);}
 			}

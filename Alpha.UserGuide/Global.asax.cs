@@ -1,5 +1,6 @@
 ﻿namespace Alpha.UserGuide
 {
+    using Alpha.Logging;
     using System.Web;
     using Web;
 
@@ -8,6 +9,7 @@
         protected void Application_Start()
         {
             ShareSession.Init();
+            LoggingConfig.Init();
         }
     }
 }

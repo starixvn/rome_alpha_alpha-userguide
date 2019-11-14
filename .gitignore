@@ -6,3 +6,12 @@
 /Alpha.UserGuide/obj
 /Alpha.UserGuide/StyleCop.Cache
 /Alpha.UserGuide/Settings.StyleCop
+\.vs/Alpha\.UserGuide/v15/Server/sqlite3/db\.lock
+
+\.vs/Alpha\.UserGuide/v15/Server/sqlite3/storage\.ide
+
+\.vs/Alpha\.UserGuide/v15/Server/sqlite3/storage\.ide-shm
+
+\.vs/Alpha\.UserGuide/v15/Server/sqlite3/storage\.ide-wal
+
+*.user

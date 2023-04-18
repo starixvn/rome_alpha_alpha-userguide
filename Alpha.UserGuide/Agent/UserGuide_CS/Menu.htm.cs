@@ -22,71 +22,71 @@ namespace Alpha.UserGuide
 			protected static string s6 = "\"></script><script src=\"";
 			protected static string s7{get{return AbsoluteUrl("Agent/Resources/Menu.js", TplSettings.Question);}}
 			protected static string s8 = "\" type=\"text/javascript\"></script></head><body><div class=\"left_menu\"><div id=\"b_top\"><a id=\"xxx0\" name=\"xxx0\" href=\"Content.aspx?Url=";
-			protected static string s9{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" balance=balance/balance_section.html");}}
+			protected static string s9{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("balance/balance_section.html");}}
 			protected static string s10 = "\" target=\"mainFrame\" class=\"b01\" onclick=\"TabMenu_Select(0);\">余额</a> |<a id=\"xxx1\" name=\"xxx1\" href=\"Content.aspx?Url=";
-			protected static string s11{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" transfer=transfer/transfer_section.html");}}
+			protected static string s11{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("transfer/transfer_section.html");}}
 			protected static string s12 = "\" target=\"mainFrame\" class=\"b01\" onclick=\"TabMenu_Select(1);\">转帐</a> |<a id=\"xxx2\" name=\"xxx2\" href=\"Content.aspx?Url=";
-			protected static string s13{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" viewlog=viewlog/view_log.html");}}
+			protected static string s13{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("viewlog/view_log.html");}}
 			protected static string s14 = "\" target=\"mainFrame\" class=\"b01\" onclick=\"TabMenu_Select(2);\">察看日志</a></div><!--Begin_Tolal Bet --><h3 class=\"menuheader expandable\">总投注</h3><ul class=\"categoryitems\"><li><a href=\"Content.aspx?Url=";
-			protected static string s15{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" totalBet=totalBet/handicap_over_under_live.html");}}
+			protected static string s15{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("totalBet/handicap_over_under_live.html");}}
 			protected static string s16 = "\" target=\"mainFrame\" id=\"menuitem0\"class=\"left_menu\" onclick=\"menu_select(0);\">亚洲盘/ 大小/ 滚球</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s17{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" totalBet=totalBet/money_line.html");}}
+			protected static string s17{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("totalBet/money_line.html");}}
 			protected static string s18 = "\" target=\"mainFrame\" id=\"menuitem1\" class=\"left_menu\"onclick=\"menu_select(1);\">独赢</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s19{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" totalBet=totalBet/Odd_Even1x2.html");}}
+			protected static string s19{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("totalBet/Odd_Even1x2.html");}}
 			protected static string s20 = "\" target=\"mainFrame\" id=\"menuitem2\" class=\"left_menu\"onclick=\"menu_select(2);\">单双 + 1 X 2</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s21{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" totalBet=totalBet/correct_score.html");}}
+			protected static string s21{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("totalBet/correct_score.html");}}
 			protected static string s22 = "\" target=\"mainFrame\" id=\"menuitem3\" class=\"left_menu\"onclick=\"menu_select(3);\">波胆</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s23{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" totalBet=totalBet/total_goal.html");}}
+			protected static string s23{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("totalBet/total_goal.html");}}
 			protected static string s24 = "\" target=\"mainFrame\" id=\"menuitem4\" class=\"left_menu\"onclick=\"menu_select(4);\">总入球</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s25{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" totalBet=totalBet/mix_parlay.html");}}
+			protected static string s25{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("totalBet/mix_parlay.html");}}
 			protected static string s26 = "\" target=\"mainFrame\" id=\"menuitem5\" class=\"left_menu\"onclick=\"menu_select(5);\">混合过关</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s27{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" totalBet=totalBet/outright.html");}}
+			protected static string s27{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("totalBet/outright.html");}}
 			protected static string s28 = "\" target=\"mainFrame\" id=\"menuitem6\" class=\"left_menu\"onclick=\"menu_select(6);\">优胜冠军</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s29{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" totalBet=totalBet/HT_FT.html");}}
+			protected static string s29{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("totalBet/HT_FT.html");}}
 			protected static string s30 = "\" target=\"mainFrame\" id=\"menuitem7\" class=\"left_menu\"onclick=\"menu_select(7);\">半场/ 全场</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s31{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" totalBet=totalBet/FG_LG.html");}}
+			protected static string s31{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("totalBet/FG_LG.html");}}
 			protected static string s32 = "\" target=\"mainFrame\" id=\"menuitem8\" class=\"left_menu\"onclick=\"menu_select(8);\">最先进球 / 最后进球</a></li></ul><!--End Tolal Bet --><!--Begin_Forecast--><h3 class=\"menuheader expandable\">预测</h3><ul class=\"categoryitems\"><li><a href=\"Content.aspx?Url=";
-			protected static string s33{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" forecast=forecast/Handicap_Over_Under_Live.html");}}
+			protected static string s33{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("forecast/Handicap_Over_Under_Live.html");}}
 			protected static string s34 = "\" target=\"mainFrame\" id=\"menuitem11\"class=\"left_menu\" onclick=\"menu_select(11);\">亚洲盘/大小盘/滚球</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s35{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" forecast=forecast/F1x2.html");}}
+			protected static string s35{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("forecast/F1x2.html");}}
 			protected static string s36 = "\" target=\"mainFrame\" id=\"menuitem12\" class=\"left_menu\"onclick=\"menu_select(12);\">1 X 2</a></li></ul><!--End_Forecast --><!--Begin_Reports --><h3 class=\"menuheader expandable\">报告</h3><ul class=\"categoryitems\"><li><a href=\"Content.aspx?Url=";
-			protected static string s37{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" Report=Report/MemberWinLoss.html");}}
+			protected static string s37{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/MemberWinLoss.html");}}
 			protected static string s38 = "\" target=\"mainFrame\" id=\"menuitem14\" class=\"left_menu\"onclick=\"menu_select(14);\">会员输赢</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s39{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" Report=Report/MemberOutstanding.html");}}
+			protected static string s39{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/MemberOutstanding.html");}}
 			protected static string s40 = "\" target=\"mainFrame\" id=\"menuitem16\" class=\"left_menu\"onclick=\"menu_select(16);\">会员未结束交易</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s41{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" Report=Report/Realtimecasinowinloss.html");}}
+			protected static string s41{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/Realtimecasinowinloss.html");}}
 			protected static string s42 = "\" target=\"mainFrame\" id=\"menuitem17\"class=\"left_menu\" onclick=\"menu_select(17);\">娱乐城即时输赢</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s43{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" Report=Report/AgentMatchWinLoss.html");}}
+			protected static string s43{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentMatchWinLoss.html");}}
 			protected static string s44 = "\" target=\"mainFrame\" id=\"menuitem18\" class=\"left_menu\"onclick=\"menu_select(18);\">球赛输赢</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s45{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" Report=Report/AgentMatchWinLossDetail.html");}}
+			protected static string s45{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentMatchWinLossDetail.html");}}
 			protected static string s46 = "\" target=\"mainFrame\" id=\"menuitem19\"class=\"left_menu\" onclick=\"menu_select(19);\">输赢报告资料</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s47{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" Report=Report/AgentWinLossByBettype.html");}}
+			protected static string s47{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentWinLossByBettype.html");}}
 			protected static string s48 = "\" target=\"mainFrame\" id=\"menuitem20\"class=\"left_menu\" onclick=\"menu_select(20);\">投注类别输赢</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s49{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" Report=Report/MemberCommByBettype.html");}}
+			protected static string s49{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/MemberCommByBettype.html");}}
 			protected static string s50 = "\" target=\"mainFrame\" id=\"menuitem21\"class=\"left_menu\" onclick=\"menu_select(21);\">投注产品分类佣金</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s51{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" Report=Report/Horseracingcommission.html");}}
+			protected static string s51{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/Horseracingcommission.html");}}
 			protected static string s52 = "\" target=\"mainFrame\" id=\"menuitem22\"class=\"left_menu\" onclick=\"menu_select(22);\">赛马佣金</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s53{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" Report=Report/MemberCancelledBets.html");}}
+			protected static string s53{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/MemberCancelledBets.html");}}
 			protected static string s54 = "\" target=\"mainFrame\" id=\"menuitem23\"class=\"left_menu\" onclick=\"menu_select(23);\">已删除/作废注单</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s55{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" Report=Report/AgentStatement.html");}}
+			protected static string s55{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/AgentStatement.html");}}
 			protected static string s56 = "\" target=\"mainFrame\" id=\"menuitem24\" class=\"left_menu\"onclick=\"menu_select(24);\">账目</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s57{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" Report=Report/Result.html");}}
+			protected static string s57{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("Report/Result.html");}}
 			protected static string s58 = "\" target=\"mainFrame\" id=\"menuitem25\" class=\"left_menu\"onclick=\"menu_select(25);\">赛果</a></li></ul><!--End_Reports --><!--Begin_Member Info --><h3 class=\"menuheader expandable\">会员资料</h3><ul class=\"categoryitems\"><li><a href=\"Content.aspx?Url=";
-			protected static string s59{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" memberinfo=memberinfo/new_member.html");}}
+			protected static string s59{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/new_member.html");}}
 			protected static string s60 = "\" target=\"mainFrame\" id=\"menuitem26\" class=\"left_menu\"onclick=\"menu_select(26);\">新增会员</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s61{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" memberinfo=memberinfo/sub_account.html");}}
+			protected static string s61{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/sub_account.html");}}
 			protected static string s62 = "\" target=\"mainFrame\" id=\"menuitem27\" class=\"left_menu\"onclick=\"menu_select(27);\">子账号</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s63{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" memberinfo=memberinfo/customer_list.html");}}
+			protected static string s63{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/customer_list.html");}}
 			protected static string s64 = "\" target=\"mainFrame\" id=\"menuitem28\" class=\"left_menu\"onclick=\"menu_select(28);\">会员</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s65{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" memberinfo=memberinfo/credit_balance.html");}}
+			protected static string s65{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/credit_balance.html");}}
 			protected static string s66 = "\" target=\"mainFrame\" id=\"menuitem29\" class=\"left_menu\"onclick=\"menu_select(29);\">信用额度/余额</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s67{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" memberinfo=memberinfo/position_taking.html");}}
+			protected static string s67{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/position_taking.html");}}
 			protected static string s68 = "\" target=\"mainFrame\" id=\"menuitem30\"class=\"left_menu\" onclick=\"menu_select(30);\">占成数%</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s69{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" memberinfo=memberinfo/Casino_position_taking.html");}}
+			protected static string s69{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/Casino_position_taking.html");}}
 			protected static string s70 = "\" target=\"mainFrame\" id=\"menuitem31\"class=\"left_menu\" onclick=\"menu_select(31);\">娱乐城占成数 (%)</a></li><li><a href=\"Content.aspx?Url=";
-			protected static string s71{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" memberinfo=memberinfo/member_commission.html");}}
+			protected static string s71{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("memberinfo/member_commission.html");}}
 			protected static string s72 = "\" target=\"mainFrame\" id=\"menuitem32\"class=\"left_menu\" onclick=\"menu_select(32);\">会员佣金</a></li></ul><!--End_Member Info --><!--Begin_Glossary --><h3 class=\"menuheader expandable\">词汇表</h3><ul class=\"categoryitems\"><li><a href=\"Content.aspx?Url=";
-			protected static string s73{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt(" glossary=glossary/convention.html");}}
+			protected static string s73{get{return Sunplus.Agent.Utilities.Encryption.CfsEnCrypt("glossary/convention.html");}}
 			protected static string s74 = "\" target=\"mainFrame\" id=\"menuitem33\" class=\"left_menu\"onclick=\"menu_select(33);\">含义</a></li></ul><!--End_Glossary --></div><div id=\"img_left\"></div></body></html>";
 			public override void ToString(ref StringBuilder bd)
 			{

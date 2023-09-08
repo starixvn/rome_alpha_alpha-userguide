@@ -3,20 +3,25 @@
     using System;
     using System.Web;
     using System.Web.Security;
-    using Alpha.Logging;
     using Alpha.Web.Helpers;
-    using Sunplus.Agent.Model.Entities;
+    using AlphaPlus.Configurations;
+    using AlphaPlus.Logging;
+    using AlphaPlus.Logging.Web;
+    using AlphaPlus.User.Models;
     using Web;
 
     public class MvcApplication : HttpApplication
     {
         protected void Application_Start()
         {
+            ConfigurationManager.Init(new ConfigurationHelper());
+            UserSession.Init(new HttpContextHelper());
             ShareSession.Init();
+            LoggingConfig.ExceptionHandler = new ExceptionHandlerAdapter();
             LoggingConfig.Init();
         }
 
-        void Application_AcquireRequestState(object sender, EventArgs e)
+        private void Application_AcquireRequestState(object sender, EventArgs e)
         {
             if (UserSession.Current.IsProtectedMode)
             {

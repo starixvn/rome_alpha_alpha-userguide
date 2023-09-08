@@ -1,6 +1,6 @@
 namespace Alpha.UserGuide.Master.UserGuide_CS
 {
-    using Sunplus.Agent.Model.Entities;
+    using AlphaPlus.User.Models;
 
     public partial class Index_Page : Fanex.Age.UI.TplPage
     {

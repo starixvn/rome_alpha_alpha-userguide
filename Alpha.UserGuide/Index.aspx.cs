@@ -31,7 +31,7 @@ namespace Alpha.UserGuide
             Index_Template tpl = new Index_Template();
             tpl.UserGuide = Resources.LocalResourceUserGuide.UserGuide;
 
-            if (AppSettings.IsSiteLabel789y)
+            if (!AppSettings.IsSiteLabel789y)
             {
                 if (UserSession.Current.IsAgent)
                 {

@@ -1726,7 +1726,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.local.config" />
-    <Content Include="Web.napexternal.config" />
     <Content Include="Web.napinternal.config" />
     <Content Include="Web.proi1.config" />
     <Content Include="Web.proi7.config" />
@@ -1738,11 +1737,8 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Web.sit.config" />
-    <Content Include="Web.napexternali7.config" />
     <Content Include="Web.napinternali7.config" />
-    <Content Include="Web.backupMNLExNap.config" />
     <Content Include="Web.backupMNLNap.config" />
-    <Content Include="Web.backupMNLExNap2.config" />
     <Content Include="Web.backupMNLNap2.config" />
   </ItemGroup>
   <ItemGroup>

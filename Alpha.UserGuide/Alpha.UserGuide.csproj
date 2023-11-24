@@ -50,19 +50,19 @@
       <HintPath>..\packages\Alpha.DNAide.1.0.1-standard1\lib\net461\Alpha.DNAide.dll</HintPath>
     </Reference>
     <Reference Include="Alpha.Web, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Alpha.Web.2.0.0-standard3\lib\net461\Alpha.Web.dll</HintPath>
+      <HintPath>..\packages\Alpha.Web.2.0.0\lib\net461\Alpha.Web.dll</HintPath>
     </Reference>
     <Reference Include="AlphaPlus.Configurations, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AlphaPlus.Configurations.1.0.0-beta5\lib\netstandard2.0\AlphaPlus.Configurations.dll</HintPath>
+      <HintPath>..\packages\AlphaPlus.Configurations.1.0.0\lib\netstandard2.0\AlphaPlus.Configurations.dll</HintPath>
     </Reference>
     <Reference Include="AlphaPlus.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AlphaPlus.Logging.1.0.0-beta1\lib\netstandard2.0\AlphaPlus.Logging.dll</HintPath>
+      <HintPath>..\packages\AlphaPlus.Logging.1.0.0\lib\netstandard2.0\AlphaPlus.Logging.dll</HintPath>
     </Reference>
     <Reference Include="AlphaPlus.Logging.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AlphaPlus.Logging.Web.1.0.0-beta2\lib\net461\AlphaPlus.Logging.Web.dll</HintPath>
+      <HintPath>..\packages\AlphaPlus.Logging.Web.1.0.0\lib\net461\AlphaPlus.Logging.Web.dll</HintPath>
     </Reference>
     <Reference Include="AlphaPlus.User.Models, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AlphaPlus.User.Models.1.0.0-beta91\lib\netstandard2.0\AlphaPlus.User.Models.dll</HintPath>
+      <HintPath>..\packages\AlphaPlus.User.Models.1.0.0\lib\netstandard2.0\AlphaPlus.User.Models.dll</HintPath>
     </Reference>
     <Reference Include="Antlr3.Runtime, Version=3.3.1.7705, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr3.Runtime.3.3.1.7705\lib\net20\Antlr3.Runtime.dll</HintPath>
@@ -72,7 +72,7 @@
       <HintPath>..\packages\EasyNetQ.2.3.3\lib\net451\EasyNetQ.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.Age.UI, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Fanex.Age.UI.4.0.0-standard2\lib\net461\Fanex.Age.UI.dll</HintPath>
+      <HintPath>..\packages\Fanex.Age.UI.4.0.0\lib\net461\Fanex.Age.UI.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.Caching, Version=2.2.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.Caching.2.2.1\lib\net461\Fanex.Caching.dll</HintPath>
@@ -129,7 +129,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Sunplus.Agent.Utilities, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sunplus.Agent.Utilities.4.0.0-beta3\lib\net461\Sunplus.Agent.Utilities.dll</HintPath>
+      <HintPath>..\packages\Sunplus.Agent.Utilities.4.0.0\lib\net461\Sunplus.Agent.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
@@ -174,7 +174,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="TplNetCore, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\TplNetCore.1.0.1-beta2\lib\netstandard2.0\TplNetCore.dll</HintPath>
+      <HintPath>..\packages\TplNetCore.1.0.1\lib\netstandard2.0\TplNetCore.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

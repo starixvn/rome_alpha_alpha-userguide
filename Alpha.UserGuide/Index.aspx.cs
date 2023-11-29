@@ -1,7 +1,8 @@
 namespace Alpha.UserGuide
 {
     using System.Web.Security;
-    using Sunplus.Agent.Model.Entities;
+    using AlphaPlus.Configurations;
+    using AlphaPlus.User.Models;
 
     public partial class Index_Page : Fanex.Age.UI.TplPage
     {
@@ -30,7 +31,7 @@ namespace Alpha.UserGuide
             Index_Template tpl = new Index_Template();
             tpl.UserGuide = Resources.LocalResourceUserGuide.UserGuide;
 
-            if(!Sunplus.Agent.Model.Entities.Permission.UserPermission.IsNeutral)
+            if (!AppSettings.IsSiteLabel789y)
             {
                 if (UserSession.Current.IsAgent)
                 {
@@ -56,7 +57,7 @@ namespace Alpha.UserGuide
                         tpl.urlLink = "Master/UserGuide_E/index.aspx";
                     }
                 }
-            }           
+            }
 
             writer.Write(tpl);
         }

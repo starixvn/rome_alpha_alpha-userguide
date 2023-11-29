@@ -1,7 +1,7 @@
 namespace Alpha.UserGuide.Agent.UserGuide_CS
 {
-    using Sunplus.Agent.Model.Entities;
-    
+    using AlphaPlus.User.Models;
+
     public partial class Index_Page : Fanex.Age.UI.TplPage
     {
         public override void ProcessRequest(ref System.Collections.Hashtable p)

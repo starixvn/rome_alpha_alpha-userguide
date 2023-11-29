@@ -1,3 +1,5 @@
+using AlphaPlus.User.Models;
+
 namespace Alpha.UserGuide.Agent.UserGuide_CT
 {
     public partial class Index_Page : Fanex.Age.UI.TplPage
@@ -17,8 +19,8 @@ namespace Alpha.UserGuide.Agent.UserGuide_CT
         }
 
         public override void RenderContent(System.Web.UI.HtmlTextWriter writer)
-        {            
-            if (Sunplus.Agent.Model.Entities.UserSession.Current.IsAgent)
+        {
+            if (UserSession.Current.IsAgent)
             {
                 index_Template tpl = new index_Template();
                 writer.Write(tpl);

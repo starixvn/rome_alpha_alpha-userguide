@@ -1,7 +1,7 @@
 namespace Alpha.UserGuide.Agent.UserGuide_CS
 {
+    using AlphaPlus.User.Models;
     using DNAide.Web;
-    using Sunplus.Agent.Model.Entities;
     using Sunplus.Agent.Utilities;
 
     public partial class Content_Page : Fanex.Age.UI.TplPage
@@ -21,7 +21,7 @@ namespace Alpha.UserGuide.Agent.UserGuide_CS
         }
 
         public override void RenderContent(System.Web.UI.HtmlTextWriter writer)
-        {            
+        {
             if (UserSession.Current.IsAgent && !string.IsNullOrEmpty(Request["Url"]))
             {
                 string urlRequest = Request["Url"].Replace(' ', '+');

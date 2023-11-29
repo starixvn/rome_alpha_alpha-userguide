@@ -1,7 +1,7 @@
 namespace Alpha.UserGuide.Agent.UserGuide_CT
 {
+    using AlphaPlus.User.Models;
     using DNAide.Web;
-    using Sunplus.Agent.Model.Entities;
 
     public partial class Content_Page : Fanex.Age.UI.TplPage
     {

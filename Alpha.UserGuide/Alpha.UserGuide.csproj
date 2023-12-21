@@ -1720,8 +1720,6 @@
     </Content>
     <Content Include="deployment.ignore" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
-    <Content Include="Web.backupMNL.config" />
-    <Content Include="Web.backupMNL2.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -1738,8 +1736,7 @@
     </Content>
     <Content Include="Web.sit.config" />
     <Content Include="Web.napinternali7.config" />
-    <Content Include="Web.backupMNLNap.config" />
-    <Content Include="Web.backupMNLNap2.config" />
+    <Content Include="Web.dr.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\LocalResourceUserGuide.ja-JP.resx" />

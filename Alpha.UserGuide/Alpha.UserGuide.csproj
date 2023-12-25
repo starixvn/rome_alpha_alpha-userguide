@@ -1737,6 +1737,7 @@
     <Content Include="Web.sit.config" />
     <Content Include="Web.napinternali7.config" />
     <Content Include="Web.dr.config" />
+    <Content Include="Web.drinternal.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\LocalResourceUserGuide.ja-JP.resx" />
